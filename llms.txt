@@ -14,3 +14,7 @@ PC audio is used on that computer while the window is open. It is not recorded, 
 - Privacy: https://cameronhum.github.io/apps/cymatic/privacy/
 - Publisher: Cameron S Humphries
 - System: 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11
+
+Cymatic is a cymatics visualizer and cymatics visualiser. It is a water cymatics simulator, a music visualizer for Windows, and a music visualiser for Windows. It is a live audio visualizer, a desktop audio visualizer, and a real-time music visualizer. The picture is an audio-reactive water simulation and a sound wave visualizer.
+
+It is also a fluid music visualizer, a water ripple visualizer, a standing wave simulation, and an interactive cymatics simulator. Visuals are frequency-responsive and the water patterns are pitch-reactive. It is sound visualization software and sound visualisation software. It uses Windows system audio capture, so it is a music visualizer without a microphone and live PC audio visualization. Full screen makes it a fullscreen music visualizer. The same names apply with the spelling visualiser, visualisation, and real-time sound visualization.
