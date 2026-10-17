@@ -4,7 +4,11 @@
 
 ## Cymatic
 
-Cymatic is a Windows application. It shows a dish of water that locks into cymatic patterns from the sound already playing through the PC speakers, or from a tone generated on the computer. A steady pitch locks the dish. Silence lets the water settle. PC audio is used on that computer while the window is open. It is not recorded, saved, or transmitted. There is no account, no ads, and no analytics. Settings stay on the PC. Cymatic is sold on the Microsoft Store, and Microsoft processes the payment.
+Cymatic is a Windows application by Cameron S Humphries. It shows a dish of water that locks into cymatic patterns from the sound already playing through the PC speakers, or from a tone generated on the computer. A steady pitch locks the dish. Silence lets the water settle.
+
+Capabilities: PC sound follows pitch and loudness. Built-in tone with pitch and volume. Drive, settle, wave speed, stroke, pitch follow, loudness follow, overtone, amplitude, crests, light, and ambient. Colours are Water, Ink, Gold, Iridescent, Galaxy, Aurora, Ember, and Blood. Surface is normal, low poly, wireframe, or dots. Perimeter is glass, a ring, a fade, or none. Orbit, zoom, slide, and full screen.
+
+PC audio is used on that computer while the window is open. It is not recorded, saved, or transmitted. There is no account, no ads, and no analytics. Settings stay on the PC. Cymatic is sold on the Microsoft Store, and Microsoft processes the payment.
 
 - App page: https://cameronhum.github.io/apps/cymatic/
 - Privacy: https://cameronhum.github.io/apps/cymatic/privacy/

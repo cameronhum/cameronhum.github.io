@@ -12,18 +12,20 @@
   <meta property="og:title" content="Cymatic for Windows — a dish of water driven by sound">
   <meta property="og:description" content="Cymatic is a Windows app by Cameron S Humphries. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.">
   <meta property="og:url" content="https://cameronhum.github.io/apps/cymatic/">
-  <meta property="og:image" content="https://cameronhum.github.io/apps/cymatic/media/dish-iridescent.jpg">
+  <meta property="og:image" content="https://cameronhum.github.io/apps/cymatic/media/icon.png">
   <meta property="og:locale" content="en_US">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Cymatic for Windows — a dish of water driven by sound">
   <meta name="twitter:description" content="Cymatic is a Windows app by Cameron S Humphries. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.">
-  <meta name="twitter:image" content="https://cameronhum.github.io/apps/cymatic/media/dish-iridescent.jpg">
+  <meta name="twitter:image" content="https://cameronhum.github.io/apps/cymatic/media/icon.png">
   <style>
     body { margin: 0; background: #070809; color: #f3f1ed; font: 17px/1.5 "Segoe UI", sans-serif; }
-    main { max-width: 52rem; margin: 0 auto; padding: 4.5rem 1.25rem 5rem; }
-    h1 { font-size: 3.25rem; font-weight: 600; letter-spacing: -0.04em; margin: 0; }
-    p.by { color: #9b978f; margin: 0.3rem 0 1rem; }
-    p.lead { max-width: 36rem; margin: 0 0 1.25rem; color: #d9d4cc; font-size: 1.15rem; }
+    main { max-width: 40rem; margin: 0 auto; padding: 3.5rem 1.25rem 4.5rem; }
+    .title { display: flex; gap: 0.9rem; align-items: center; }
+    .title img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+    h1 { font-size: 2.4rem; font-weight: 600; letter-spacing: -0.03em; margin: 0; }
+    p.by { color: #9b978f; margin: 0.15rem 0 0; }
+    p.lead { margin: 1.25rem 0; color: #d9d4cc; }
     a.store {
       display: inline-block;
       width: 176px;
@@ -36,18 +38,19 @@
       white-space: nowrap;
       text-decoration: none;
     }
-    img.hero { display: block; width: 100%; height: auto; margin: 2.5rem 0 0; }
-    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; margin-top: 0.85rem; }
-    figure { margin: 0; }
-    figure img { display: block; width: 100%; height: auto; }
-    figcaption { color: #9b978f; font-size: 0.82rem; margin-top: 0.35rem; }
-    .copy { max-width: 36rem; margin-top: 2.75rem; }
-    .copy h2 { font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #9b978f; margin: 1.7rem 0 0.3rem; }
-    .copy a { color: #f3f1ed; }
+    .shots { display: flex; flex-wrap: wrap; gap: 0.7rem; margin: 1.6rem 0 0; }
+    .shots figure { width: 6.6rem; margin: 0; }
+    .shots img { display: block; width: 100%; height: auto; }
+    figcaption { color: #9b978f; font-size: 0.78rem; margin-top: 0.3rem; }
+    h2 { font-size: 1.05rem; font-weight: 600; margin: 2rem 0 0.4rem; }
+    h3 { font-size: 1rem; font-weight: 600; margin: 1.15rem 0 0.2rem; }
+    ul { margin: 0.4rem 0 0; padding-left: 1.15rem; }
+    li { margin: 0.28rem 0; }
+    a { color: #f3f1ed; }
     @media (max-width: 640px) {
-      main { padding-top: 2.5rem; }
-      h1 { font-size: 2.4rem; }
-      .pair { grid-template-columns: 1fr; }
+      main { padding-top: 2rem; }
+      h1 { font-size: 2rem; }
+      .shots figure { width: 5.4rem; }
     }
   </style>
   <script type="application/ld+json">
@@ -62,7 +65,7 @@
         "description": "Cymatic is a Windows app by Cameron S Humphries. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.",
         "inLanguage": "en",
         "about": { "@id": "https://cameronhum.github.io/apps/cymatic/#app" },
-        "primaryImageOfPage": "https://cameronhum.github.io/apps/cymatic/media/dish-iridescent.jpg",
+        "primaryImageOfPage": "https://cameronhum.github.io/apps/cymatic/media/icon.png",
         "significantLink": "https://cameronhum.github.io/apps/cymatic/privacy/",
         "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["#summary"] },
         "dateModified": "2026-10-17"
@@ -82,13 +85,25 @@
         "operatingSystem": "Windows 10, Windows 11",
         "softwareVersion": "1.0.3",
         "softwareRequirements": "64-bit Windows 10 version 2004 (build 19041) or later",
-        "image": "https://cameronhum.github.io/apps/cymatic/media/dish-iridescent.jpg",
+        "image": "https://cameronhum.github.io/apps/cymatic/media/icon.png",
         "screenshot": [
           "https://cameronhum.github.io/apps/cymatic/media/dish-iridescent.jpg",
           "https://cameronhum.github.io/apps/cymatic/media/dish-water.jpg",
           "https://cameronhum.github.io/apps/cymatic/media/dish-gold.jpg",
           "https://cameronhum.github.io/apps/cymatic/media/dish-wire.jpg",
           "https://cameronhum.github.io/apps/cymatic/media/dish-lowpoly.jpg"
+        ],
+        "featureList": [
+          "Dish of water driven by sound already playing through the PC speakers",
+          "Built-in tone with pitch and volume",
+          "A steady pitch locks the dish and silence lets the water settle",
+          "Pitch follow and loudness follow",
+          "Drive, settle, wave speed, stroke, overtone, amplitude, crests, light, and ambient",
+          "Colours: Water, Ink, Gold, Iridescent, Galaxy, Aurora, Ember, Blood",
+          "Surface: normal, low poly, wireframe, or dots",
+          "Perimeter: glass, ring, fade, or none",
+          "Orbit, zoom, slide, and full screen",
+          "No account, no ads, and no analytics. Audio is not recorded or transmitted"
         ],
         "offers": {
           "@type": "Offer",
@@ -97,9 +112,56 @@
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock"
         },
-        "description": "Cymatic shows a dish of water that locks into patterns from the sound already playing on the PC, or from a tone generated on the computer.",
+        "description": "Cymatic shows a dish of water that locks into cymatic patterns from the sound already playing on the PC, or from a tone generated on the computer.",
         "author": { "@id": "https://cameronhum.github.io/#cameron" },
         "publisher": { "@id": "https://cameronhum.github.io/#cameron" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://cameronhum.github.io/apps/cymatic/#faq",
+        "url": "https://cameronhum.github.io/apps/cymatic/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Cymatic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cymatic is a Windows app by Cameron S Humphries. It shows a dish of water that locks into cymatic patterns from the sound already playing on the PC, or from a tone generated on the computer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What can Cymatic do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cymatic follows pitch and loudness from the PC speakers or from a built-in tone. A steady pitch locks the dish. Silence lets the water settle. You can set drive, settle, wave speed, stroke, overtone, amplitude, crests, light, and ambient. Colours are Water, Ink, Gold, Iridescent, Galaxy, Aurora, Ember, and Blood. The surface can be normal, low poly, wireframe, or dots. The perimeter can be glass, a ring, a fade, or none. You can orbit, zoom, slide, and use full screen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Cymatic record audio from my PC?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. If you choose PC sound, Cymatic reads the audio already playing through the speakers while the window is open. That audio is not recorded, not saved, and not transmitted."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Cymatic need an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. There is no sign-in. Cymatic does not show ads and does not include analytics. Settings stay on the PC."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which versions of Windows run Cymatic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11."
+            }
+          }
+        ]
       }
     ]
   }
@@ -107,14 +169,23 @@
 </head>
 <body>
   <main>
-    <h1>Cymatic</h1>
-    <p class="by">Cameron S Humphries</p>
-    <p class="lead" id="summary">A dish of water that locks into patterns from the sound already playing on your PC, or from a tone in the app. A steady pitch locks the dish. Silence lets the water settle.</p>
+    <div class="title">
+      <img src="media/icon.png" width="150" height="150" alt="Cymatic logo, a round dish of water">
+      <div>
+        <h1>Cymatic</h1>
+        <p class="by">Cameron S Humphries</p>
+      </div>
+    </div>
+
+    <p class="lead" id="summary">Cymatic is a Windows app by Cameron S Humphries. It shows a dish of water that locks into cymatic patterns from the sound already playing on the PC, or from a tone generated on the computer. A steady pitch locks the dish. Silence lets the water settle.</p>
+
     <a class="store" href="https://apps.microsoft.com/detail/9n09bgpd2857">Download Cymatic on Microsoft Store</a>
 
-    <img class="hero" src="media/dish-iridescent.jpg" width="748" height="606" alt="Iridescent dish locked into a coloured flower pattern.">
-
-    <div class="pair">
+    <div class="shots">
+      <figure>
+        <img src="media/dish-iridescent.jpg" width="748" height="606" alt="Iridescent dish locked into a coloured flower pattern.">
+        <figcaption>Iridescent</figcaption>
+      </figure>
       <figure>
         <img src="media/dish-water.jpg" width="700" height="584" alt="Dark teal dish of water with a glass rim.">
         <figcaption>Water</figcaption>
@@ -123,10 +194,8 @@
         <img src="media/dish-gold.jpg" width="664" height="494" alt="Gold dish with standing peaks.">
         <figcaption>Gold</figcaption>
       </figure>
-    </div>
-    <div class="pair">
       <figure>
-        <img src="media/dish-wire.jpg" width="1240" height="610" alt="Wireframe dish on a black field.">
+        <img src="media/dish-wire.jpg" width="1240" height="610" alt="Wireframe dish.">
         <figcaption>Wireframe</figcaption>
       </figure>
       <figure>
@@ -135,16 +204,49 @@
       </figure>
     </div>
 
-    <div class="copy">
-      <h2>Sound</h2>
-      <p>If you choose PC sound, the app reads the audio already playing through your speakers so the dish can follow the pitch and loudness. That audio is used on this computer while the window is open. It is not recorded, not saved, and not transmitted. The built-in tone is generated on this computer.</p>
+    <h2>What it can do</h2>
+    <p>Cymatic is a music visualiser. The picture is the water. Put sound on and the surface moves with it. Hold a note and it locks into rings, petals, and grids.</p>
+    <ul>
+      <li>PC sound reads the audio already playing through the speakers and follows its pitch and loudness.</li>
+      <li>A built-in tone lets you set the pitch and the volume yourself.</li>
+      <li>A steady pitch locks the dish. Silence lets the water settle.</li>
+      <li>Drive, settle, wave speed, stroke, pitch follow, loudness follow, overtone, amplitude, crests, light, and ambient.</li>
+      <li>Colours: Water, Ink, Gold, Iridescent, Galaxy, Aurora, Ember, and Blood.</li>
+      <li>Surface: normal, low poly, wireframe, or dots.</li>
+      <li>Perimeter: glass, a ring, a fade, or none. Radius can be changed.</li>
+      <li>Drag to orbit, scroll to zoom, right-drag to slide. Full screen is available.</li>
+      <li>Reset water and reset camera put the dish and the view back.</li>
+    </ul>
 
-      <h2>On your PC</h2>
-      <p>Cymatic runs on 64-bit Windows 10 version 2004 or later, including Windows 11. Colours, surface, and the other controls are saved on this PC. There is no account. It does not show ads and it does not include analytics.</p>
+    <h2>PC sound</h2>
+    <p>If you choose PC sound, the app reads the audio already playing through your speakers so the dish can follow the pitch and loudness. That audio is used on this computer while the window is open. It is not recorded, not saved, and not transmitted.</p>
 
-      <h2>Privacy</h2>
-      <p><a href="/apps/cymatic/privacy/">Privacy policy</a></p>
-    </div>
+    <h2>Tone</h2>
+    <p>The built-in tone is generated on this computer. You set the pitch and the volume. Preset pitches are 48 rings, 96 petals, 190 hex, and 420 grid.</p>
+
+    <h2>On your PC</h2>
+    <p>Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11. Sliders, colours, and the other controls are saved on this PC so they are still there the next time you open the app. They stay on this PC.</p>
+    <p>There is no account and no sign-in. Cymatic does not show ads, does not include analytics, and does not send what you do to Cameron S Humphries or to anyone else. It is sold on the Microsoft Store. Microsoft processes the payment.</p>
+
+    <h2>Questions</h2>
+
+    <h3>What is Cymatic?</h3>
+    <p>Cymatic is a Windows app by Cameron S Humphries. It shows a dish of water that locks into cymatic patterns from the sound already playing on the PC, or from a tone generated on the computer.</p>
+
+    <h3>What can Cymatic do?</h3>
+    <p>It follows pitch and loudness from the PC speakers or from a built-in tone. A steady pitch locks the dish. Silence lets the water settle. You can set drive, settle, wave speed, stroke, overtone, amplitude, crests, light, and ambient. Colours are Water, Ink, Gold, Iridescent, Galaxy, Aurora, Ember, and Blood. The surface can be normal, low poly, wireframe, or dots. The perimeter can be glass, a ring, a fade, or none. You can orbit, zoom, slide, and use full screen.</p>
+
+    <h3>Does Cymatic record audio from my PC?</h3>
+    <p>No. If you choose PC sound, Cymatic reads the audio already playing through the speakers while the window is open. That audio is not recorded, not saved, and not transmitted.</p>
+
+    <h3>Does Cymatic need an account?</h3>
+    <p>No. There is no sign-in. Cymatic does not show ads and does not include analytics. Settings stay on the PC.</p>
+
+    <h3>Which versions of Windows run Cymatic?</h3>
+    <p>Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11.</p>
+
+    <h2>Privacy</h2>
+    <p><a href="/apps/cymatic/privacy/">Cymatic privacy policy</a></p>
   </main>
 </body>
 </html>
