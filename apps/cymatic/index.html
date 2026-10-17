@@ -43,7 +43,13 @@
     .shots img { display: block; width: 100%; height: auto; }
     figcaption { color: #9b978f; font-size: 0.78rem; margin-top: 0.3rem; }
     h2 { font-size: 1.05rem; font-weight: 600; margin: 2rem 0 0.4rem; }
-    h3 { font-size: 1rem; font-weight: 600; margin: 1.15rem 0 0.2rem; }
+    .faq { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.7rem; }
+    .faq details { background: #121418; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; }
+    .faq summary { cursor: pointer; list-style: none; padding: 0.85rem 2.2rem 0.85rem 1rem; font-weight: 600; position: relative; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: ""; position: absolute; right: 1rem; top: 1.15rem; width: 0.45rem; height: 0.45rem; border-right: 1.5px solid #9b978f; border-bottom: 1.5px solid #9b978f; transform: rotate(45deg); }
+    .faq details[open] summary::after { transform: rotate(-135deg); top: 1.3rem; }
+    .faq details p { margin: 0; padding: 0 1rem 0.95rem; color: #d9d4cc; }
     ul { margin: 0.4rem 0 0; padding-left: 1.15rem; }
     li { margin: 0.28rem 0; }
     a { color: #f3f1ed; }
@@ -229,21 +235,28 @@
     <p>There is no account and no sign-in. Cymatic does not show ads, does not include analytics, and does not send what you do to Cameron S Humphries or to anyone else. It is sold on the Microsoft Store. Microsoft processes the payment.</p>
 
     <h2>Questions</h2>
-
-    <h3>What is Cymatic?</h3>
-    <p>Cymatic is a Windows app by Cameron S Humphries. It shows a dish of water that locks into cymatic patterns from the sound already playing on the PC, or from a tone generated on the computer.</p>
-
-    <h3>What can Cymatic do?</h3>
-    <p>It follows pitch and loudness from the PC speakers or from a built-in tone. A steady pitch locks the dish. Silence lets the water settle. You can set drive, settle, wave speed, stroke, overtone, amplitude, crests, light, and ambient. Colours are Water, Ink, Gold, Iridescent, Galaxy, Aurora, Ember, and Blood. The surface can be normal, low poly, wireframe, or dots. The perimeter can be glass, a ring, a fade, or none. You can orbit, zoom, slide, and use full screen.</p>
-
-    <h3>Does Cymatic record audio from my PC?</h3>
-    <p>No. If you choose PC sound, Cymatic reads the audio already playing through the speakers while the window is open. That audio is not recorded, not saved, and not transmitted.</p>
-
-    <h3>Does Cymatic need an account?</h3>
-    <p>No. There is no sign-in. Cymatic does not show ads and does not include analytics. Settings stay on the PC.</p>
-
-    <h3>Which versions of Windows run Cymatic?</h3>
-    <p>Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11.</p>
+    <div class="faq">
+      <details>
+        <summary>What is Cymatic?</summary>
+        <p>Cymatic is a Windows app by Cameron S Humphries. It shows a dish of water that locks into cymatic patterns from the sound already playing on the PC, or from a tone generated on the computer.</p>
+      </details>
+      <details>
+        <summary>What can Cymatic do?</summary>
+        <p>It follows pitch and loudness from the PC speakers or from a built-in tone. A steady pitch locks the dish. Silence lets the water settle. You can set drive, settle, wave speed, stroke, overtone, amplitude, crests, light, and ambient. Colours are Water, Ink, Gold, Iridescent, Galaxy, Aurora, Ember, and Blood. The surface can be normal, low poly, wireframe, or dots. The perimeter can be glass, a ring, a fade, or none. You can orbit, zoom, slide, and use full screen.</p>
+      </details>
+      <details>
+        <summary>Does Cymatic record audio from my PC?</summary>
+        <p>No. If you choose PC sound, Cymatic reads the audio already playing through the speakers while the window is open. That audio is not recorded, not saved, and not transmitted.</p>
+      </details>
+      <details>
+        <summary>Does Cymatic need an account?</summary>
+        <p>No. There is no sign-in. Cymatic does not show ads and does not include analytics. Settings stay on the PC.</p>
+      </details>
+      <details>
+        <summary>Which versions of Windows run Cymatic?</summary>
+        <p>Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11.</p>
+      </details>
+    </div>
 
     <h2>Privacy</h2>
     <p><a href="/apps/cymatic/privacy/">Cymatic privacy policy</a></p>
