@@ -1,0 +1,12 @@
+# CymaWare
+
+> App pages for software published by Cameron S Humphries under the name CymaWare.
+
+## Cymatic
+
+Cymatic is a Windows application. It shows a dish of water that locks into cymatic patterns from the sound already playing through the PC speakers, or from a tone generated on the computer. A steady pitch locks the dish. Silence lets the water settle. PC audio is used on that computer while the window is open. It is not recorded, saved, or transmitted. There is no account, no ads, and no analytics. Settings stay on the PC. Cymatic is sold on the Microsoft Store, and Microsoft processes the payment.
+
+- App page: https://cameronhum.github.io/apps/cymatic/
+- Privacy: https://cameronhum.github.io/apps/cymatic/privacy/
+- Publisher: Cameron S Humphries (CymaWare)
+- System: 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11
