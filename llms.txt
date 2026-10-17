@@ -1,6 +1,6 @@
-# CymaWare
+# Cameron S Humphries
 
-> App pages for software published by Cameron S Humphries under the name CymaWare.
+> App pages for software published by Cameron S Humphries.
 
 ## Cymatic
 
@@ -8,5 +8,5 @@ Cymatic is a Windows application. It shows a dish of water that locks into cymat
 
 - App page: https://cameronhum.github.io/apps/cymatic/
 - Privacy: https://cameronhum.github.io/apps/cymatic/privacy/
-- Publisher: Cameron S Humphries (CymaWare)
+- Publisher: Cameron S Humphries
 - System: 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11

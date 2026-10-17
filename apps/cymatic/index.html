@@ -4,43 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cymatic for Windows — a dish of water driven by sound</title>
-  <meta name="description" content="Cymatic is a Windows app by CymaWare. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.">
+  <meta name="description" content="Cymatic is a Windows app by Cameron S Humphries. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <meta name="author" content="Cameron S Humphries">
   <link rel="canonical" href="https://cameronhum.github.io/apps/cymatic/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Cymatic for Windows — a dish of water driven by sound">
-  <meta property="og:description" content="Cymatic is a Windows app by CymaWare. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.">
+  <meta property="og:description" content="Cymatic is a Windows app by Cameron S Humphries. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.">
   <meta property="og:url" content="https://cameronhum.github.io/apps/cymatic/">
-  <meta property="og:image" content="https://cameronhum.github.io/apps/cymatic/media/shot-water.jpg">
+  <meta property="og:image" content="https://cameronhum.github.io/apps/cymatic/media/dish-iridescent.jpg">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cymatic for Windows — a dish of water driven by sound">
-  <meta name="twitter:description" content="Cymatic is a Windows app by CymaWare. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.">
-  <meta name="twitter:image" content="https://cameronhum.github.io/apps/cymatic/media/shot-water.jpg">
+  <meta name="twitter:description" content="Cymatic is a Windows app by Cameron S Humphries. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.">
+  <meta name="twitter:image" content="https://cameronhum.github.io/apps/cymatic/media/dish-iridescent.jpg">
   <style>
-    body { margin: 0; background: #0b0d10; color: #e8e6e3; font: 17px/1.55 Georgia, serif; }
-    a { color: #d7c4a3; }
-    .wrap { max-width: 60rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-    .hero { display: flex; gap: 1.25rem; align-items: flex-start; }
-    .hero img.icon { width: 88px; height: 88px; border-radius: 18px; flex: none; }
-    h1 { font-size: 2.4rem; font-weight: normal; margin: 0 0 0.15rem; letter-spacing: -0.02em; }
-    p.meta { color: #9a968f; margin: 0 0 0.8rem; }
-    #summary { margin: 0 0 1.1rem; max-width: 38rem; }
+    body { margin: 0; background: #070809; color: #f3f1ed; font: 17px/1.5 "Segoe UI", sans-serif; }
+    main { max-width: 52rem; margin: 0 auto; padding: 4.5rem 1.25rem 5rem; }
+    h1 { font-size: 3.25rem; font-weight: 600; letter-spacing: -0.04em; margin: 0; }
+    p.by { color: #9b978f; margin: 0.3rem 0 1rem; }
+    p.lead { max-width: 36rem; margin: 0 0 1.25rem; color: #d9d4cc; font-size: 1.15rem; }
     a.store { display: inline-block; line-height: 0; }
-    a.store img { width: 200px; height: auto; }
-    figure { margin: 1.75rem 0 0; }
-    figure img, .grid img { width: 100%; height: auto; display: block; border-radius: 14px; border: 1px solid rgba(255,255,255,0.08); background: #000; }
-    figcaption, .grid p { color: #9a968f; font: 14px/1.4 Georgia, serif; margin: 0.45rem 0 0; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
-    .copy { max-width: 38rem; }
-    h2 { font-size: 1.15rem; font-weight: normal; margin: 2rem 0 0.4rem; }
-    h3 { font-size: 1.02rem; font-weight: normal; margin: 1.25rem 0 0.25rem; }
-    @media (max-width: 720px) {
-      .hero { display: block; }
-      .hero img.icon { margin-bottom: 0.8rem; }
-      .grid { grid-template-columns: 1fr; }
-      h1 { font-size: 2rem; }
+    a.store img { height: 48px; width: auto; }
+    img.hero { display: block; width: 100%; height: auto; margin: 2.5rem 0 0; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; margin-top: 0.85rem; }
+    figure { margin: 0; }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption { color: #9b978f; font-size: 0.82rem; margin-top: 0.35rem; }
+    .copy { max-width: 36rem; margin-top: 2.75rem; }
+    .copy h2 { font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #9b978f; margin: 1.7rem 0 0.3rem; }
+    .copy a { color: #f3f1ed; }
+    @media (max-width: 640px) {
+      main { padding-top: 2.5rem; }
+      h1 { font-size: 2.4rem; }
+      .pair { grid-template-columns: 1fr; }
     }
   </style>
   <script type="application/ld+json">
@@ -52,29 +49,13 @@
         "@id": "https://cameronhum.github.io/apps/cymatic/#page",
         "url": "https://cameronhum.github.io/apps/cymatic/",
         "name": "Cymatic for Windows",
-        "description": "Cymatic is a Windows app by CymaWare. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.",
+        "description": "Cymatic is a Windows app by Cameron S Humphries. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.",
         "inLanguage": "en",
-        "isPartOf": { "@id": "https://cameronhum.github.io/#website" },
         "about": { "@id": "https://cameronhum.github.io/apps/cymatic/#app" },
-        "primaryImageOfPage": "https://cameronhum.github.io/apps/cymatic/media/shot-water.jpg",
+        "primaryImageOfPage": "https://cameronhum.github.io/apps/cymatic/media/dish-iridescent.jpg",
         "significantLink": "https://cameronhum.github.io/apps/cymatic/privacy/",
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": ["#summary"]
-        },
+        "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["#summary"] },
         "dateModified": "2026-10-17"
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://cameronhum.github.io/#website",
-        "url": "https://cameronhum.github.io/",
-        "name": "CymaWare",
-        "publisher": { "@id": "https://cameronhum.github.io/#publisher" }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://cameronhum.github.io/#publisher",
-        "name": "CymaWare"
       },
       {
         "@type": "Person",
@@ -91,13 +72,13 @@
         "operatingSystem": "Windows 10, Windows 11",
         "softwareVersion": "1.0.3",
         "softwareRequirements": "64-bit Windows 10 version 2004 (build 19041) or later",
-        "image": "https://cameronhum.github.io/apps/cymatic/media/icon.png",
+        "image": "https://cameronhum.github.io/apps/cymatic/media/dish-iridescent.jpg",
         "screenshot": [
-          "https://cameronhum.github.io/apps/cymatic/media/shot-water.jpg",
-          "https://cameronhum.github.io/apps/cymatic/media/shot-iridescent.jpg",
-          "https://cameronhum.github.io/apps/cymatic/media/shot-gold.jpg",
-          "https://cameronhum.github.io/apps/cymatic/media/shot-wire.jpg",
-          "https://cameronhum.github.io/apps/cymatic/media/shot-lowpoly.jpg"
+          "https://cameronhum.github.io/apps/cymatic/media/dish-iridescent.jpg",
+          "https://cameronhum.github.io/apps/cymatic/media/dish-water.jpg",
+          "https://cameronhum.github.io/apps/cymatic/media/dish-gold.jpg",
+          "https://cameronhum.github.io/apps/cymatic/media/dish-wire.jpg",
+          "https://cameronhum.github.io/apps/cymatic/media/dish-lowpoly.jpg"
         ],
         "offers": {
           "@type": "Offer",
@@ -106,150 +87,56 @@
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock"
         },
-        "description": "Cymatic shows a dish of water that locks into cymatic patterns from the sound already playing on the PC, or from a tone generated on the computer.",
-        "featureList": [
-          "Dish of water driven by sound already playing through the PC speakers",
-          "Built-in tone generated on the computer",
-          "A steady pitch locks the dish and silence lets the water settle",
-          "Colours, surface, perimeter, and water controls saved on the PC",
-          "No account, no ads, and no analytics"
-        ],
+        "description": "Cymatic shows a dish of water that locks into patterns from the sound already playing on the PC, or from a tone generated on the computer.",
         "author": { "@id": "https://cameronhum.github.io/#cameron" },
-        "publisher": { "@id": "https://cameronhum.github.io/#publisher" }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://cameronhum.github.io/apps/cymatic/#faq",
-        "url": "https://cameronhum.github.io/apps/cymatic/",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Cymatic?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Cymatic is a Windows app published by CymaWare (Cameron S Humphries). It shows a dish of water that locks into cymatic patterns from the sound already playing on the PC, or from a tone generated on the computer."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does Cymatic record audio from my PC?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. If you choose PC sound, Cymatic reads the audio already playing through the speakers while the window is open, so the dish can follow pitch and loudness. That audio is not recorded, not saved, and not transmitted."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does Cymatic need an account?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. Cymatic has no account and no sign-in. It does not send what you do to Cameron S Humphries or to anyone else."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Which versions of Windows run Cymatic?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Where is Cymatic sold?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Cymatic is sold on the Microsoft Store. Microsoft processes the payment. Cameron S Humphries does not receive your card number or other payment details."
-            }
-          }
-        ]
+        "publisher": { "@id": "https://cameronhum.github.io/#cameron" }
       }
     ]
   }
   </script>
 </head>
 <body>
-  <div class="wrap">
-    <header class="hero">
-      <img class="icon" src="media/icon.png" width="150" height="150" alt="Cymatic app icon, a round dish of water">
-      <div>
-        <h1>Cymatic</h1>
-        <p class="meta">Windows app by CymaWare. Cameron S Humphries.</p>
-        <p id="summary">Cymatic is a Windows app published by CymaWare (Cameron S Humphries). It shows a dish of water that locks into cymatic patterns from the sound already playing on the PC, or from a tone generated on the computer. A steady pitch locks the dish. Silence lets the water settle.</p>
-        <a class="store" href="https://apps.microsoft.com/detail/9n09bgpd2857">
-          <img src="media/badge-light.svg" width="161" height="44" alt="Get it from Microsoft">
-        </a>
-      </div>
-    </header>
+  <main>
+    <h1>Cymatic</h1>
+    <p class="by">Cameron S Humphries</p>
+    <p class="lead" id="summary">A dish of water that locks into patterns from the sound already playing on your PC, or from a tone in the app. A steady pitch locks the dish. Silence lets the water settle.</p>
+    <a class="store" href="https://apps.microsoft.com/detail/9n09bgpd2857">
+      <img src="media/badge-light.svg" width="161" height="44" alt="Download from the Microsoft Store">
+    </a>
 
-    <figure>
-      <img src="media/shot-water.jpg" width="1664" height="952" alt="Cymatic on Windows. A dark teal dish of water with a glass rim, locked into a flower pattern at 96 Hz.">
-      <figcaption>Water, glass rim. A steady pitch locks the dish.</figcaption>
-    </figure>
+    <img class="hero" src="media/dish-iridescent.jpg" width="748" height="606" alt="Iridescent dish locked into a coloured flower pattern.">
 
-    <div class="grid">
-      <div>
-        <img src="media/shot-iridescent.jpg" width="1664" height="952" alt="Cymatic iridescent colour. A round dish with rainbow rings and petals at 111 Hz.">
-        <p>Iridescent.</p>
-      </div>
-      <div>
-        <img src="media/shot-gold.jpg" width="1664" height="952" alt="Cymatic gold colour. A metallic dish with a grid of standing peaks at 190 Hz.">
-        <p>Gold.</p>
-      </div>
-      <div>
-        <img src="media/shot-wire.jpg" width="1664" height="952" alt="Cymatic galaxy colour in wireframe. Coloured triangles form the dish at 419 Hz.">
-        <p>Galaxy, wireframe.</p>
-      </div>
-      <div>
-        <img src="media/shot-lowpoly.jpg" width="1664" height="952" alt="Cymatic aurora colour in low poly. Faceted blue and teal triangles form the dish at 48 Hz.">
-        <p>Aurora, low poly.</p>
-      </div>
+    <div class="pair">
+      <figure>
+        <img src="media/dish-water.jpg" width="700" height="584" alt="Dark teal dish of water with a glass rim.">
+        <figcaption>Water</figcaption>
+      </figure>
+      <figure>
+        <img src="media/dish-gold.jpg" width="664" height="494" alt="Gold dish with standing peaks.">
+        <figcaption>Gold</figcaption>
+      </figure>
+    </div>
+    <div class="pair">
+      <figure>
+        <img src="media/dish-wire.jpg" width="1240" height="610" alt="Wireframe dish on a black field.">
+        <figcaption>Wireframe</figcaption>
+      </figure>
+      <figure>
+        <img src="media/dish-lowpoly.jpg" width="1100" height="610" alt="Low poly dish in blue and teal.">
+        <figcaption>Low poly</figcaption>
+      </figure>
     </div>
 
     <div class="copy">
-      <h2>PC sound</h2>
-      <p>If you choose PC sound, the app reads the audio already playing through your speakers so the dish can follow the pitch and loudness. That audio is used on this computer while the window is open. It is not recorded, not saved, and not transmitted.</p>
-
-      <h2>Tone</h2>
-      <p>The built-in tone is generated on this computer. You set the pitch and the volume.</p>
-
-      <h2>The dish</h2>
-      <p>You can set drive, settle, wave speed, stroke, how closely pitch and loudness are followed, overtone, amplitude, crests, light, and ambient. Colours are Water, Ink, Gold, Iridescent, Galaxy, Aurora, Ember, and Blood. The surface can be normal, low poly, wireframe, or dots. The perimeter can be glass, a ring, a fade, or none. Full screen is available.</p>
+      <h2>Sound</h2>
+      <p>If you choose PC sound, the app reads the audio already playing through your speakers so the dish can follow the pitch and loudness. That audio is used on this computer while the window is open. It is not recorded, not saved, and not transmitted. The built-in tone is generated on this computer.</p>
 
       <h2>On your PC</h2>
-      <p>Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11. Sliders, colours, and the other controls are saved on this PC so they are still there the next time you open the app. They stay on this PC. There is no account and no sign-in.</p>
+      <p>Cymatic runs on 64-bit Windows 10 version 2004 or later, including Windows 11. Colours, surface, and the other controls are saved on this PC. There is no account. It does not show ads and it does not include analytics.</p>
 
-      <h2>Microsoft Store</h2>
-      <p>Cymatic is sold on the Microsoft Store. Microsoft processes the payment. Cameron S Humphries does not receive your card number or other payment details.</p>
-      <p>
-        <a class="store" href="https://apps.microsoft.com/detail/9n09bgpd2857">
-          <img src="media/badge-light.svg" width="161" height="44" alt="Get it from Microsoft">
-        </a>
-      </p>
-
-      <h2>What this app does not do</h2>
-      <p>It does not show ads, it does not include analytics, and it does not sell or share personal information. It does not send what you do to Cameron S Humphries or to anyone else.</p>
-
-      <h2>Privacy policy</h2>
-      <p>The <a href="/apps/cymatic/privacy/">Cymatic privacy policy</a> is the policy for this app.</p>
-
-      <h2>Questions</h2>
-
-      <h3>What is Cymatic?</h3>
-      <p>Cymatic is a Windows app published by CymaWare (Cameron S Humphries). It shows a dish of water that locks into cymatic patterns from the sound already playing on the PC, or from a tone generated on the computer.</p>
-
-      <h3>Does Cymatic record audio from my PC?</h3>
-      <p>No. If you choose PC sound, Cymatic reads the audio already playing through the speakers while the window is open, so the dish can follow pitch and loudness. That audio is not recorded, not saved, and not transmitted.</p>
-
-      <h3>Does Cymatic need an account?</h3>
-      <p>No. Cymatic has no account and no sign-in. It does not send what you do to Cameron S Humphries or to anyone else.</p>
-
-      <h3>Which versions of Windows run Cymatic?</h3>
-      <p>Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11.</p>
-
-      <h3>Where is Cymatic sold?</h3>
-      <p>Cymatic is sold on the Microsoft Store. Microsoft processes the payment. Cameron S Humphries does not receive your card number or other payment details.</p>
+      <h2>Privacy</h2>
+      <p><a href="/apps/cymatic/privacy/">Privacy policy</a></p>
     </div>
-  </div>
+  </main>
 </body>
 </html>
