@@ -2,7 +2,7 @@ body { margin: 0; background: #fff; color: #1d1d1f; font: 17px/1.5 -apple-system
 a { color: #0066cc; }
 header.site { position: sticky; top: 0; z-index: 2; background: rgba(255,255,255,0.86); border-bottom: 1px solid rgba(0,0,0,0.08); backdrop-filter: saturate(180%) blur(20px); }
 header.site nav { max-width: 40rem; margin: 0 auto; padding: 0.75rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-header.site a { color: #6e6e73; text-decoration: none; }
+header.site a { color: #6e6e73; text-decoration: none; transition: color 0.2s ease; }
 header.site a.brand { color: #1d1d1f; font-weight: 600; }
 header.site .apps { display: flex; gap: 1.1rem; }
 header.site .apps a[aria-current="page"] { color: #1d1d1f; }
@@ -14,4 +14,20 @@ p.lead { margin: 0.85rem 0 1.4rem; color: #6e6e73; }
 @media (max-width: 640px) {
   main { padding-top: 1.75rem; }
   h1 { font-size: 2rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  main { animation: rise 0.55s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  a.app { transition: background 0.25s ease, transform 0.25s ease; }
+  a.app:hover { transform: translateY(-2px); }
+  .card button { transition: transform 0.2s ease, background 0.2s ease; }
+  .card button:hover { transform: scale(1.02); }
+  @supports (interpolate-size: allow-keywords) {
+    .faq details { interpolate-size: allow-keywords; }
+    .faq details::details-content { height: 0; opacity: 0; overflow: clip; transition: height 0.28s ease, opacity 0.28s ease; }
+    .faq details[open]::details-content { height: auto; opacity: 1; }
+  }
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
 }
