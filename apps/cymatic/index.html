@@ -19,14 +19,11 @@
   <meta name="twitter:title" content="Cymatic — Live Water Cymatics Music Visualiser for Windows">
   <meta name="twitter:description" content="Cymatic is a Windows app by Cameron S Humphries. A dish of water locks into patterns from PC sound or a built-in tone. No account. Audio stays on the computer.">
   <meta name="twitter:image" content="https://cameronhum.github.io/apps/cymatic/media/icon.png">
+  <link rel="stylesheet" href="/site.css">
   <style>
-    body { margin: 0; background: #070809; color: #f3f1ed; font: 17px/1.5 "Segoe UI", sans-serif; }
-    main { max-width: 40rem; margin: 0 auto; padding: 3.5rem 1.25rem 4.5rem; }
     .title { display: flex; gap: 0.9rem; align-items: center; }
     .title img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
-    h1 { font-size: 2.4rem; font-weight: 600; letter-spacing: -0.03em; margin: 0; }
     p.by { color: #9b978f; margin: 0.15rem 0 0; }
-    p.lead { margin: 1.25rem 0; color: #d9d4cc; }
     a.store {
       display: inline-block;
       width: 176px;
@@ -43,7 +40,6 @@
     .shots figure { width: 6.6rem; margin: 0; }
     .shots img { display: block; width: 6.6rem; height: 6.6rem; object-fit: cover; object-position: center; }
     figcaption { color: #9b978f; font-size: 0.78rem; margin-top: 0.3rem; }
-    h2 { font-size: 1.05rem; font-weight: 600; margin: 2rem 0 0.4rem; }
     .faq { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.7rem; }
     .faq details { background: #121418; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; }
     .faq summary { cursor: pointer; list-style: none; padding: 0.85rem 2.2rem 0.85rem 1rem; font-weight: 600; position: relative; }
@@ -53,7 +49,6 @@
     .faq details p { margin: 0; padding: 0 1rem 0.95rem; color: #d9d4cc; }
     ul { margin: 0.4rem 0 0; padding-left: 1.15rem; }
     li { margin: 0.28rem 0; }
-    a { color: #f3f1ed; }
     .card { background: #121418; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem; margin-top: 0.7rem; }
     .card h3 { font-size: 1rem; font-weight: 600; margin: 0 0 0.3rem; }
     .card p { margin: 0 0 0.75rem; color: #d9d4cc; font-size: 0.95rem; }
@@ -62,8 +57,6 @@
     .kofi { margin: 0.85rem 0 0; }
     .kofi img { height: 40px; width: auto; display: block; }
     @media (max-width: 640px) {
-      main { padding-top: 2rem; }
-      h1 { font-size: 2rem; }
       .shots figure { width: 5.4rem; }
       .shots img { width: 5.4rem; height: 5.4rem; }
     }
@@ -196,6 +189,14 @@
   </script>
 </head>
 <body>
+  <header class="site">
+    <nav>
+      <a class="brand" href="/">Cameron S Humphries</a>
+      <div class="apps">
+        <a href="/apps/cymatic/" aria-current="page">Cymatic</a>
+      </div>
+    </nav>
+  </header>
   <main>
     <div class="title">
       <img src="media/icon.png" width="150" height="150" alt="Cymatic logo, a round dish of water">

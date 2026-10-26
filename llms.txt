@@ -2,6 +2,8 @@
 
 > App pages for software published by Cameron S Humphries.
 
+- Home: https://cameronhum.github.io/
+
 ## Cymatic
 
 Cymatic is a Windows application by Cameron S Humphries. It shows a dish of water that locks into cymatic patterns from the sound already playing through the PC speakers, or from a tone generated on the computer. A steady pitch locks the dish. Silence lets the water settle.
