@@ -54,6 +54,13 @@
     ul { margin: 0.4rem 0 0; padding-left: 1.15rem; }
     li { margin: 0.28rem 0; }
     a { color: #f3f1ed; }
+    .card { background: #121418; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem; margin-top: 0.7rem; }
+    .card h3 { font-size: 1rem; font-weight: 600; margin: 0 0 0.3rem; }
+    .card p { margin: 0 0 0.75rem; color: #d9d4cc; font-size: 0.95rem; }
+    .card textarea { display: block; width: 100%; box-sizing: border-box; min-height: 5.5rem; background: #070809; color: #f3f1ed; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.6rem 0.7rem; font: inherit; resize: vertical; }
+    .card button { display: inline-block; margin-top: 0.75rem; background: #f3f1ed; color: #070809; border: 0; border-radius: 8px; padding: 0.45rem 0.8rem; font: inherit; font-weight: 600; cursor: pointer; }
+    .kofi { margin: 0.85rem 0 0; }
+    .kofi img { height: 40px; width: auto; display: block; }
     @media (max-width: 640px) {
       main { padding-top: 2rem; }
       h1 { font-size: 2rem; }
@@ -271,6 +278,19 @@
         <summary>Which versions of Windows run Cymatic?</summary>
         <p>Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11.</p>
       </details>
+    </div>
+
+    <h2>Support</h2>
+    <div class="support">
+      <form class="card" action="https://github.com/cameronhum/apps/issues/new" method="get" target="_blank">
+        <h3>Report a bug</h3>
+        <p>Please note: a GitHub account is required.</p>
+        <input type="hidden" name="labels" value="Cymatic">
+        <input type="hidden" name="title" value="Cymatic">
+        <textarea name="body" placeholder="What went wrong" required></textarea>
+        <button type="submit">Report a bug</button>
+      </form>
+      <p class="kofi"><a href="https://ko-fi.com/cameronhumphries"><img src="media/kofi.png" width="580" height="146" alt="Buy me a coffee on Ko-fi"></a></p>
     </div>
 
     <h2>Privacy</h2>
