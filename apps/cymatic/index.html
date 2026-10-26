@@ -23,12 +23,13 @@
   <style>
     .title { display: flex; gap: 0.9rem; align-items: center; }
     .title img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
-    p.by { color: #9b978f; margin: 0.15rem 0 0; }
+    p.by { color: #6e6e73; margin: 0.15rem 0 0; }
+    p.lead { color: #1d1d1f; }
     a.store {
       display: inline-block;
       width: 176px;
       height: 48px;
-      background: url("media/badge-light.svg") center / contain no-repeat;
+      background: url("media/badge-dark.svg") center / contain no-repeat;
       color: transparent;
       font-size: 1rem;
       line-height: 48px;
@@ -38,27 +39,28 @@
     }
     .shots { display: flex; flex-wrap: wrap; gap: 0.7rem; margin: 1.6rem 0 0; }
     .shots figure { width: 6.6rem; margin: 0; }
-    .shots img { display: block; width: 6.6rem; height: 6.6rem; object-fit: cover; object-position: center; }
-    figcaption { color: #9b978f; font-size: 0.78rem; margin-top: 0.3rem; }
+    .shots img { display: block; width: 6.6rem; height: 6.6rem; object-fit: cover; object-position: center; border-radius: 12px; }
+    figcaption { color: #6e6e73; font-size: 0.78rem; margin-top: 0.3rem; }
     .faq { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.7rem; }
-    .faq details { background: #121418; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; }
+    .faq details { background: #f5f5f7; border-radius: 14px; }
     .faq summary { cursor: pointer; list-style: none; padding: 0.85rem 2.2rem 0.85rem 1rem; font-weight: 600; position: relative; }
     .faq summary::-webkit-details-marker { display: none; }
-    .faq summary::after { content: ""; position: absolute; right: 1rem; top: 1.15rem; width: 0.45rem; height: 0.45rem; border-right: 1.5px solid #9b978f; border-bottom: 1.5px solid #9b978f; transform: rotate(45deg); }
+    .faq summary::after { content: ""; position: absolute; right: 1rem; top: 1.15rem; width: 0.45rem; height: 0.45rem; border-right: 1.5px solid #6e6e73; border-bottom: 1.5px solid #6e6e73; transform: rotate(45deg); }
     .faq details[open] summary::after { transform: rotate(-135deg); top: 1.3rem; }
-    .faq details p { margin: 0; padding: 0 1rem 0.95rem; color: #d9d4cc; }
+    .faq details p { margin: 0; padding: 0 1rem 0.95rem; color: #424245; }
     ul { margin: 0.4rem 0 0; padding-left: 1.15rem; }
     li { margin: 0.28rem 0; }
-    .card { background: #121418; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem; margin-top: 0.7rem; }
+    .card { background: #f5f5f7; border-radius: 18px; padding: 1rem; margin-top: 0.7rem; }
     .card h3 { font-size: 1rem; font-weight: 600; margin: 0 0 0.3rem; }
-    .card p { margin: 0 0 0.75rem; color: #d9d4cc; font-size: 0.95rem; }
-    .card textarea { display: block; width: 100%; box-sizing: border-box; min-height: 5.5rem; background: #070809; color: #f3f1ed; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.6rem 0.7rem; font: inherit; resize: vertical; }
-    .card button { display: inline-block; margin-top: 0.75rem; background: #f3f1ed; color: #070809; border: 0; border-radius: 8px; padding: 0.45rem 0.8rem; font: inherit; font-weight: 600; cursor: pointer; }
+    .card p { margin: 0 0 0.75rem; color: #6e6e73; font-size: 0.95rem; }
+    .card textarea { display: block; width: 100%; box-sizing: border-box; min-height: 5.5rem; background: #fff; color: #1d1d1f; border: 1px solid #d2d2d7; border-radius: 12px; padding: 0.6rem 0.7rem; font: inherit; resize: vertical; }
+    .card textarea::placeholder { color: #6e6e73; }
+    .card button { display: inline-block; margin-top: 0.75rem; background: #1d1d1f; color: #fff; border: 0; border-radius: 980px; padding: 0.5rem 1rem; font: inherit; font-weight: 600; cursor: pointer; }
     .kofi { margin: 0.85rem 0 0; }
     .kofi img { height: 40px; width: auto; display: block; }
     @media (max-width: 640px) {
       .shots figure { width: 5.4rem; }
-      .shots img { width: 5.4rem; height: 5.4rem; }
+      .shots img { width: 5.4rem; height: 5.4rem; border-radius: 10px; }
     }
   </style>
   <script type="application/ld+json">
