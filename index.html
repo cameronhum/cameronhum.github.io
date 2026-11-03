@@ -17,7 +17,7 @@
   <meta name="twitter:title" content="Windows Apps by Cameron S Humphries | Cymatic">
   <meta name="twitter:description" content="Independent Windows apps by Cameron S Humphries. Explore Cymatic, a real-time audio-reactive water visualizer that responds to PC sound and generated tones.">
   <meta name="twitter:image" content="https://cameronhum.github.io/apps/cymatic/media/icon.png">
-  <link rel="stylesheet" href="/site.css?v=3">
+  <link rel="stylesheet" href="/site.css?v=4">
   <style>
     a.app { display: flex; gap: 0.9rem; align-items: center; margin-top: 0.7rem; padding: 0.95rem; background: #f5f5f7; border-radius: 18px; text-decoration: none; color: inherit; }
     a.app:hover { background: #ececf1; text-decoration: none; }
@@ -71,8 +71,9 @@
 <body>
   <header class="site">
     <nav>
-      <a class="brand" href="/" aria-current="page">Cameron S Humphries</a>
+      <a class="brand" href="/">Cameron S Humphries</a>
       <div class="apps">
+        <a href="/" aria-current="page">Home</a>
         <a href="/apps/cymatic/">Cymatic</a>
         <a href="https://cameronhum.github.io/while-ago/">While Ago</a>
       </div>
@@ -82,13 +83,16 @@
     <h1>Cameron S Humphries</h1>
     <p class="lead">Independent Windows apps, including real-time audio visualizers and simple personal productivity tools.</p>
     <h2>Apps</h2>
-    <a class="app" href="/apps/cymatic/">
-      <img src="/apps/cymatic/media/icon.png" width="150" height="150" alt="">
-      <span>
-        <strong>Cymatic</strong>
-        <span class="what">Real-time Windows cymatics visualizer. Turn music and PC audio into interactive water patterns, without a microphone.</span>
-      </span>
-    </a>
+    <div class="app-row">
+      <a class="main" href="/apps/cymatic/">
+        <img src="/apps/cymatic/media/icon.png" width="150" height="150" alt="">
+        <span>
+          <strong>Cymatic</strong>
+          <span class="what">Real-time Windows cymatics visualizer. Turn music and PC audio into interactive water patterns, without a microphone.</span>
+        </span>
+      </a>
+      <a class="privacy" href="/apps/cymatic/privacy/">Privacy</a>
+    </div>
     <div class="app-row">
       <a class="main" href="https://cameronhum.github.io/while-ago/">
         <img src="/media/while-ago.png" width="256" height="256" alt="">
