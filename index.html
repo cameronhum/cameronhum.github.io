@@ -30,6 +30,11 @@
     .app-row a.main strong { display: block; font-size: 1.05rem; letter-spacing: -0.01em; }
     .app-row a.main .what { display: block; color: #6e6e73; margin-top: 0.15rem; }
     .app-row a.privacy { color: #6e6e73; font-size: 0.92rem; white-space: nowrap; }
+    .app-row:hover { background: #ececf1; }
+    @media (prefers-reduced-motion: no-preference) {
+      .app-row { transition: background 0.25s ease, transform 0.25s ease; }
+      .app-row:hover { transform: translateY(-2px); }
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -95,7 +100,7 @@
     </div>
     <div class="app-row">
       <a class="main" href="https://cameronhum.github.io/while-ago/">
-        <img src="/media/while-ago.png" width="256" height="256" alt="">
+        <img src="/media/while-ago.png" width="128" height="128" alt="">
         <span>
           <strong>While Ago</strong>
           <span class="what">A quiet local tracker. The times stay on the device.</span>

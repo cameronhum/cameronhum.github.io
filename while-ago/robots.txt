@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cameronhum.github.io/while-ago/sitemap.xml

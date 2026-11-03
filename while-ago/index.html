@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>While Ago — A quiet local activity tracker for Windows</title>
+  <meta name="description" content="While Ago is a Windows app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged what you do. No account. Times stay on the PC.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="author" content="Cameron S Humphries">
+  <link rel="canonical" href="https://cameronhum.github.io/while-ago/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="While Ago — A quiet local activity tracker for Windows">
+  <meta property="og:description" content="While Ago is a Windows app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged what you do. No account. Times stay on the PC.">
+  <meta property="og:url" content="https://cameronhum.github.io/while-ago/">
+  <meta property="og:image" content="https://cameronhum.github.io/while-ago/media/icon.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="While Ago — A quiet local activity tracker for Windows">
+  <meta name="twitter:description" content="While Ago is a Windows app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged what you do. No account. Times stay on the PC.">
+  <meta name="twitter:image" content="https://cameronhum.github.io/while-ago/media/icon.png">
+  <link rel="stylesheet" href="site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://cameronhum.github.io/while-ago/#page",
+        "url": "https://cameronhum.github.io/while-ago/",
+        "name": "While Ago — A quiet local activity tracker for Windows",
+        "description": "While Ago is a Windows app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged what you do. No account. Times stay on the PC.",
+        "inLanguage": "en",
+        "about": { "@id": "https://cameronhum.github.io/while-ago/#app" },
+        "primaryImageOfPage": "https://cameronhum.github.io/while-ago/media/window.jpg",
+        "significantLink": "https://cameronhum.github.io/while-ago/privacy.html",
+        "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["#summary"] },
+        "dateModified": "2026-11-03"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://cameronhum.github.io/#cameron",
+        "name": "Cameron S Humphries"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://cameronhum.github.io/while-ago/#app",
+        "name": "While Ago",
+        "keywords": "local activity tracker, Windows habit canvas, personal time tracker, offline activity log",
+        "url": "https://cameronhum.github.io/while-ago/",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "softwareVersion": "0.1.0",
+        "image": "https://cameronhum.github.io/while-ago/media/icon.png",
+        "screenshot": [
+          "https://cameronhum.github.io/while-ago/media/window.jpg",
+          "https://cameronhum.github.io/while-ago/media/canvas.jpg",
+          "https://cameronhum.github.io/while-ago/media/cluster.jpg"
+        ],
+        "featureList": [
+          "Activity cards on a canvas that you can pan and zoom",
+          "A card grows as more time passes since the last log",
+          "Workspaces, with the pan and zoom remembered for each one",
+          "List and chart of the same activities",
+          "Search, light and dark, and archive",
+          "Export and import a JSON backup",
+          "No account, no server, no ads, and no analytics. Times stay in localStorage on the PC"
+        ],
+        "description": "While Ago keeps the time of things you do on a canvas of cards. There is no account. The times stay on the PC.",
+        "author": { "@id": "https://cameronhum.github.io/#cameron" },
+        "publisher": { "@id": "https://cameronhum.github.io/#cameron" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://cameronhum.github.io/while-ago/#faq",
+        "url": "https://cameronhum.github.io/while-ago/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is While Ago?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While Ago is a Windows app by Cameron S Humphries. It keeps the time of things you do, things you would rather do less, and things you only want to remember. Each activity is a card on a canvas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What can While Ago do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You log an activity and the card shows how long it has been. Cards sit in a cluster you can pan and zoom. Workspaces keep separate sets of cards, and each workspace remembers its own view. There is also a list and a chart. You can search, switch light and dark, archive a card, and export or import a JSON backup."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does While Ago need an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. There is no sign-in and no server. While Ago does not show ads and does not include analytics. The times stay on the PC."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where are the times stored?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On Windows the app stores its data in localStorage inside the WebView that draws the window. That storage lives on the PC, under the local app data folder for com.whileago.app. It is not uploaded."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I back up While Ago?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The header menu has Export backup, which downloads a JSON file named while-ago.json. Import backup reads that file back onto the device. The file stays wherever you save it."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+  <header class="site">
+    <nav>
+      <a class="brand" href="https://cameronhum.github.io/">Cameron S Humphries</a>
+      <div class="apps">
+        <a href="#top">Home</a>
+        <a href="index.html" aria-current="page">While Ago</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="title">
+      <img src="media/icon.png" width="128" height="128" alt="While Ago icon, a teal and gold knot">
+      <div>
+        <h1>While Ago</h1>
+        <p class="by">Cameron S Humphries</p>
+      </div>
+    </div>
+
+    <p class="lead" id="summary">While Ago is a Windows app by Cameron S Humphries. It keeps the time of things you do, things you would rather do less, and things you only want to remember. Each one is a card on a canvas. A card grows as more time passes since you last logged it.</p>
+
+    <button class="store" type="button">Get While Ago on Microsoft Store</button>
+    <a class="repo" href="https://github.com/cameronhum/while-ago">Source on GitHub</a>
+
+    <div class="reel">
+      <div class="reel-track">
+        <figure>
+          <img src="media/window.jpg" width="820" height="820" alt="While Ago window with the personal workspace, Canvas selected, and activity cards on a lavender field.">
+          <figcaption>Window</figcaption>
+        </figure>
+        <figure>
+          <img src="media/canvas.jpg" width="700" height="700" alt="Activity cards for walk, drink water, stretch, shower, short break, sleep, and cook.">
+          <figcaption>Canvas</figcaption>
+        </figure>
+        <figure>
+          <img src="media/cluster.jpg" width="710" height="710" alt="Canvas, List, and Chart tabs above the Eat, Coffee, and water plants cards.">
+          <figcaption>Views</figcaption>
+        </figure>
+      </div>
+      <button class="reel-btn prev" type="button" aria-label="Previous picture"></button>
+      <button class="reel-btn next" type="button" aria-label="Next picture"></button>
+      <div class="reel-dots">
+        <button type="button" aria-label="Window" aria-current="true"></button>
+        <button type="button" aria-label="Canvas"></button>
+        <button type="button" aria-label="Views"></button>
+      </div>
+    </div>
+
+    <h2>What it can do</h2>
+    <p>While Ago is a local tracker. The picture is the canvas. You log something and the card remembers when. Leave it, and the card grows with the time that has passed.</p>
+    <ul>
+      <li>Activities are cards. Marking one done writes the time and the card returns toward its home size.</li>
+      <li>The canvas pans and zooms. That view is remembered for each workspace.</li>
+      <li>Workspaces keep separate sets of cards. A new workspace starts empty.</li>
+      <li>List and Chart show the same activities another way.</li>
+      <li>An expected rhythm can be daily, every few days, weekly, monthly, custom, or learned from the gaps you have already logged.</li>
+      <li>A card can be for something you want to do more, something you want to do less, or something you only want to track.</li>
+      <li>Search, light and dark, and archive.</li>
+      <li>Export backup downloads a JSON file. Import backup brings that file back.</li>
+    </ul>
+
+    <h2>A local activity tracker for Windows</h2>
+    <p>Unlike a tracker that keeps an account on a server, While Ago keeps the times on the computer where you type them. The cards sit in a cluster with a soft cloud behind them. You move around the canvas instead of scrolling a feed.</p>
+    <p>You can switch workspace, change the view, and open a card to log an earlier time. No account is required.</p>
+
+    <h2>Canvas</h2>
+    <p>The canvas is the main view. Cards that have waited longer take more space, so the ones that have been quiet are easier to see. Drag a card to move it. The space between cards stays clear. Pan and zoom are kept for that workspace, and the first visit fits every card in view.</p>
+
+    <h2>Workspaces</h2>
+    <p>Personal and work are separate canvases. The names sit in the header. Adding a workspace starts it with no activities. Switching workspace jumps straight to that canvas, including its cloud, and restores the pan and zoom you left there.</p>
+
+    <h2>On your PC</h2>
+    <p>While Ago runs in a Windows window. The times, workspaces, card positions, and the light or dark choice are saved on that PC so they are still there the next time you open the app. They stay on that PC.</p>
+    <p>There is no account and no sign-in. While Ago does not show ads, does not include analytics, and does not send what you log to Cameron S Humphries or to anyone else. It is not sold on a store. The source is on GitHub.</p>
+
+    <h2>FAQ</h2>
+    <div class="faq">
+      <details>
+        <summary>What is While Ago?</summary>
+        <p>While Ago is a Windows app by Cameron S Humphries. It keeps the time of things you do, things you would rather do less, and things you only want to remember. Each activity is a card on a canvas.</p>
+      </details>
+      <details>
+        <summary>What can While Ago do?</summary>
+        <p>You log an activity and the card shows how long it has been. Cards sit in a cluster you can pan and zoom. Workspaces keep separate sets of cards, and each workspace remembers its own view. There is also a list and a chart. You can search, switch light and dark, archive a card, and export or import a JSON backup.</p>
+      </details>
+      <details>
+        <summary>Does While Ago need an account?</summary>
+        <p>No. There is no sign-in. While Ago does not show ads and does not include analytics. The times stay on the PC.</p>
+      </details>
+      <details>
+        <summary>Where are the times stored?</summary>
+        <p>On Windows the app stores its data in localStorage inside the WebView that draws the window. That storage lives on the PC, under the local app data folder for com.whileago.app. It is not uploaded.</p>
+      </details>
+      <details>
+        <summary>Can I back up While Ago?</summary>
+        <p>Yes. The header menu has Export backup, which downloads a JSON file named while-ago.json. Import backup reads that file back onto the device. The file stays wherever you save it.</p>
+      </details>
+    </div>
+
+    <h2>Support</h2>
+    <div class="support">
+      <form class="card" action="https://github.com/cameronhum/while-ago/issues/new" method="get" target="_blank">
+        <h3>Report a bug</h3>
+        <p class="quiet">Please note: a GitHub account is required.</p>
+        <input type="hidden" name="title" value="While Ago">
+        <textarea name="body" placeholder="What went wrong" required></textarea>
+        <button type="submit">Report a bug</button>
+      </form>
+      <p class="kofi"><a href="https://ko-fi.com/cameronhumphries"><img src="https://cameronhum.github.io/apps/cymatic/media/kofi.png" width="580" height="146" alt="Buy me a coffee on Ko-fi"></a></p>
+    </div>
+
+    <h2>Privacy</h2>
+    <p><a href="privacy.html">While Ago privacy policy</a></p>
+  </main>
+  <script>
+    var reel = document.querySelector(".reel");
+    var track = reel.querySelector(".reel-track");
+    var slides = track.querySelectorAll("figure");
+    var dots = reel.querySelectorAll(".reel-dots button");
+    var index = 0;
+    var timer = 0;
+    var moving = false;
+    function show(next) {
+      var visible = matchMedia("(max-width: 640px)").matches ? 2 : 3;
+      var last = Math.max(0, slides.length - visible);
+      if (next < 0) index = last;
+      else if (next > last) index = 0;
+      else index = next;
+      var gap = parseFloat(getComputedStyle(track).gap) || 0;
+      var stride = slides[0].getBoundingClientRect().width + gap;
+      moving = true;
+      track.scrollTo({ left: index * stride, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      for (var i = 0; i < dots.length; i++) {
+        if (i === index) dots[i].setAttribute("aria-current", "true");
+        else dots[i].removeAttribute("aria-current");
+      }
+    }
+    function arm() {
+      clearInterval(timer);
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      timer = setInterval(function () { show(index + 1); }, 4500);
+    }
+    reel.querySelector(".prev").addEventListener("click", function () { show(index - 1); arm(); });
+    reel.querySelector(".next").addEventListener("click", function () { show(index + 1); arm(); });
+    for (var d = 0; d < dots.length; d++) {
+      dots[d].addEventListener("click", function () {
+        show(Array.prototype.indexOf.call(dots, this));
+        arm();
+      });
+    }
+    track.addEventListener("scrollend", function () {
+      if (moving) {
+        moving = false;
+        return;
+      }
+      var visible = matchMedia("(max-width: 640px)").matches ? 2 : 3;
+      var last = Math.max(0, slides.length - visible);
+      var gap = parseFloat(getComputedStyle(track).gap) || 0;
+      var stride = slides[0].getBoundingClientRect().width + gap;
+      var next = Math.round(track.scrollLeft / stride);
+      if (next < 0) next = 0;
+      if (next > last) next = last;
+      index = next;
+      for (var i = 0; i < dots.length; i++) {
+        if (i === index) dots[i].setAttribute("aria-current", "true");
+        else dots[i].removeAttribute("aria-current");
+      }
+    });
+    reel.addEventListener("mouseenter", function () { clearInterval(timer); });
+    reel.addEventListener("mouseleave", arm);
+    reel.addEventListener("focusin", function () { clearInterval(timer); });
+    reel.addEventListener("focusout", arm);
+    arm();
+  </script>
+</body>
+</html>
