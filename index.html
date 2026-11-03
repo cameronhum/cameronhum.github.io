@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cameron S Humphries</title>
-  <meta name="description" content="Windows apps by Cameron S Humphries. Cymatic is a live water cymatics music visualiser for Windows.">
+  <meta name="description" content="Windows apps by Cameron S Humphries. Cymatic is a live water cymatics music visualiser. While Ago is a quiet local tracker.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Cameron S Humphries">
   <link rel="canonical" href="https://cameronhum.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Cameron S Humphries">
-  <meta property="og:description" content="Windows apps by Cameron S Humphries. Cymatic is a live water cymatics music visualiser for Windows.">
+  <meta property="og:description" content="Windows apps by Cameron S Humphries. Cymatic is a live water cymatics music visualiser. While Ago is a quiet local tracker.">
   <meta property="og:url" content="https://cameronhum.github.io/">
   <meta property="og:image" content="https://cameronhum.github.io/apps/cymatic/media/icon.png">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Cameron S Humphries">
-  <meta name="twitter:description" content="Windows apps by Cameron S Humphries. Cymatic is a live water cymatics music visualiser for Windows.">
+  <meta name="twitter:description" content="Windows apps by Cameron S Humphries. Cymatic is a live water cymatics music visualiser. While Ago is a quiet local tracker.">
   <meta name="twitter:image" content="https://cameronhum.github.io/apps/cymatic/media/icon.png">
   <link rel="stylesheet" href="/site.css?v=3">
   <style>
@@ -24,6 +24,12 @@
     a.app img { width: 64px; height: 64px; border-radius: 14px; flex: none; }
     a.app strong { display: block; font-size: 1.05rem; letter-spacing: -0.01em; }
     a.app .what { display: block; color: #6e6e73; margin-top: 0.15rem; }
+    .app-row { display: flex; gap: 0.9rem; align-items: center; margin-top: 0.7rem; padding: 0.95rem; background: #f5f5f7; border-radius: 18px; }
+    .app-row a.main { display: flex; gap: 0.9rem; align-items: center; flex: 1; min-width: 0; text-decoration: none; color: inherit; }
+    .app-row a.main img { width: 64px; height: 64px; border-radius: 14px; flex: none; }
+    .app-row a.main strong { display: block; font-size: 1.05rem; letter-spacing: -0.01em; }
+    .app-row a.main .what { display: block; color: #6e6e73; margin-top: 0.15rem; }
+    .app-row a.privacy { color: #6e6e73; font-size: 0.92rem; white-space: nowrap; }
   </style>
   <script type="application/ld+json">
   {
@@ -49,6 +55,12 @@
             "position": 1,
             "name": "Cymatic",
             "url": "https://cameronhum.github.io/apps/cymatic/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "While Ago",
+            "url": "https://cameronhum.github.io/while-ago/"
           }
         ]
       }
@@ -62,6 +74,7 @@
       <a class="brand" href="/" aria-current="page">Cameron S Humphries</a>
       <div class="apps">
         <a href="/apps/cymatic/">Cymatic</a>
+        <a href="https://cameronhum.github.io/while-ago/">While Ago</a>
       </div>
     </nav>
   </header>
@@ -76,6 +89,16 @@
         <span class="what">A dish of water that locks into patterns from sound.</span>
       </span>
     </a>
+    <div class="app-row">
+      <a class="main" href="https://cameronhum.github.io/while-ago/">
+        <img src="/media/while-ago.png" width="256" height="256" alt="">
+        <span>
+          <strong>While Ago</strong>
+          <span class="what">A quiet local tracker. The times stay on the device.</span>
+        </span>
+      </a>
+      <a class="privacy" href="https://cameronhum.github.io/while-ago/privacy.html">Privacy</a>
+    </div>
   </main>
 </body>
 </html>
