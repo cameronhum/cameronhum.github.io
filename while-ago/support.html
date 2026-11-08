@@ -3,12 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support — While Ago</title>
-  <meta name="description" content="While Ago has no account and no server. Export backup saves a JSON file on the device.">
+  <title>While Ago support</title>
+  <meta name="description" content="Support for While Ago, a local time tracker for Windows. No account. Where the times are stored, how a JSON backup works, and how to report a bug.">
   <meta name="robots" content="index, follow">
+  <meta name="author" content="Cameron S Humphries">
   <link rel="canonical" href="https://cameronhum.github.io/while-ago/support.html">
   <link rel="icon" type="image/png" href="media/icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="While Ago support">
+  <meta property="og:description" content="Support for While Ago, a local time tracker for Windows. No account. Where the times are stored, how a JSON backup works, and how to report a bug.">
+  <meta property="og:url" content="https://cameronhum.github.io/while-ago/support.html">
+  <meta property="og:image" content="https://cameronhum.github.io/while-ago/media/icon.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="While Ago support">
+  <meta name="twitter:description" content="Support for While Ago, a local time tracker for Windows. No account. Where the times are stored, how a JSON backup works, and how to report a bug.">
+  <meta name="twitter:image" content="https://cameronhum.github.io/while-ago/media/icon.png">
   <link rel="stylesheet" href="site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://cameronhum.github.io/while-ago/support.html#page",
+        "url": "https://cameronhum.github.io/while-ago/support.html",
+        "name": "While Ago support",
+        "description": "Support for While Ago, a local time tracker for Windows. No account. Where the times are stored, how a JSON backup works, and how to report a bug.",
+        "inLanguage": "en",
+        "about": { "@id": "https://cameronhum.github.io/while-ago/#app" },
+        "isPartOf": { "@id": "https://cameronhum.github.io/while-ago/#page" },
+        "dateModified": "2026-11-08"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://cameronhum.github.io/#cameron",
+        "name": "Cameron S Humphries"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site">
@@ -23,11 +57,24 @@
   </header>
   <main>
     <h1>Support</h1>
-    <p class="lead">Local data. A JSON backup if you want one.</p>
-    <p>While Ago has no account to sign in to, and no server that keeps your times. On Windows it is a desktop window. What you log stays in that copy.</p>
-    <p>A backup is a JSON file from the header menu. Export backup saves it. Import backup brings that file back onto the device. There is no ad banner. This page does not take a payment.</p>
-    <p>Questions can go through the bug report on the While Ago page.</p>
-    <p><a href="index.html">Back to While Ago</a></p>
+    <p class="lead" id="summary">While Ago is a Windows desktop app with no account. The times stay in that copy. A JSON backup is there if you want one.</p>
+
+    <h2>The window</h2>
+    <p>Version 0.1.0 runs on Windows 10 and Windows 11. The window is drawn with the Microsoft Edge WebView2 runtime, which Windows 11 includes and which current Windows 10 installs include as well. You log an activity on a card. The card keeps the time. Workspaces keep separate sets of cards, and each one remembers its own pan and zoom.</p>
+    <p>There is nothing to sign in to. Closing the window does not upload the log.</p>
+
+    <h2>Where the times live</h2>
+    <p>The app stores activities, times, notes, workspaces, card positions, and the light or dark choice in localStorage inside the WebView. On Windows that storage is on the PC, under the local app data folder for com.whileago.app. The <a href="privacy.html">privacy policy</a> lists what is stored and what is not sent.</p>
+
+    <h2>Backup</h2>
+    <p>Open the header menu and choose Export backup. The app downloads a JSON file named while-ago.json into the folder you pick. Keep that file wherever you keep your own documents. Import backup reads a file you choose and writes it back onto this PC. While Ago does not send the file to a server.</p>
+    <p>If you move to another PC, copy the file yourself and import it there. Uninstalling the app removes the on-device store. A backup you already saved stays until you delete that file.</p>
+
+    <h2>Report a bug</h2>
+    <p>Use the bug report on the <a href="index.html#support">While Ago page</a>. A GitHub account is required, because the form opens a GitHub issue. Say which Windows version you are on, what you did, and what you expected. Leave activity names, times, notes, and the backup file out of the message. The form sends only the text you type.</p>
+
+    <h2>Store and payment</h2>
+    <p>The Microsoft Store listing is not open yet. This website does not take a payment. Nothing on the <a href="donate.html">donate page</a> charges a card.</p>
   </main>
 </body>
 </html>

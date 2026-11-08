@@ -23,3 +23,20 @@ PC audio is used on that computer while the window is open. It is not recorded, 
 - Microphone: Not required for PC audio
 
 Cymatic is a Windows cymatics and music visualization application that transforms audio playing on the PC or a generated tone into interactive, frequency-responsive water patterns. Unlike conventional spectrum-bar visualizers, it presents the sound as a customizable dish of water. It supports full-screen viewing and does not require a microphone, account or subscription.
+
+## While Ago
+
+While Ago is a Windows desktop application by Cameron S Humphries. It is a local-first time tracker. Each activity is a card on a canvas. A card grows as more time passes since you last logged it. Cards can be for something you want to do more, something you want to do less, or something you only want to remember.
+
+Capabilities: canvas with pan and zoom, remembered per workspace. Separate workspaces. List and chart of the same activities. Search, light and dark, and archive. A rhythm can be daily, every few days, weekly, monthly, custom, or learned from the gaps already logged. Export backup downloads a JSON file named while-ago.json. Import backup reads that file back onto the PC.
+
+There is no account and no server. The app does not show ads and does not include analytics. Times, notes, workspaces, card positions, and settings stay in localStorage on the PC, under the local app data folder for com.whileago.app. They are not uploaded. The Microsoft Store listing is not open yet. This website does not take a payment.
+
+- App page: https://cameronhum.github.io/while-ago/
+- Privacy: https://cameronhum.github.io/while-ago/privacy.html
+- Support: https://cameronhum.github.io/while-ago/support.html
+- Donate: https://cameronhum.github.io/while-ago/donate.html
+- Publisher: Cameron S Humphries
+- System: Windows 10 and Windows 11 desktop, version 0.1.0, using Microsoft Edge WebView2
+- Account: None
+- Storage: On the PC only

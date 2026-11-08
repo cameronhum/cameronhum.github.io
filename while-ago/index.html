@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>While Ago — A quiet local activity tracker for Windows</title>
-  <meta name="description" content="While Ago is a Windows app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged what you do. No account. Times stay on the PC.">
+  <title>While Ago — Local Time Tracker for Windows</title>
+  <meta name="description" content="While Ago is a Windows desktop app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged an activity. No account. Times stay on the PC.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <meta name="author" content="Cameron S Humphries">
   <link rel="canonical" href="https://cameronhum.github.io/while-ago/">
   <link rel="icon" type="image/png" href="media/icon.png">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="While Ago — A quiet local activity tracker for Windows">
-  <meta property="og:description" content="While Ago is a Windows app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged what you do. No account. Times stay on the PC.">
+  <meta property="og:title" content="While Ago — Local Time Tracker for Windows">
+  <meta property="og:description" content="While Ago is a Windows desktop app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged an activity. No account. Times stay on the PC.">
   <meta property="og:url" content="https://cameronhum.github.io/while-ago/">
   <meta property="og:image" content="https://cameronhum.github.io/while-ago/media/icon.png">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="While Ago — A quiet local activity tracker for Windows">
-  <meta name="twitter:description" content="While Ago is a Windows app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged what you do. No account. Times stay on the PC.">
+  <meta name="twitter:title" content="While Ago — Local Time Tracker for Windows">
+  <meta name="twitter:description" content="While Ago is a Windows desktop app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged an activity. No account. Times stay on the PC.">
   <meta name="twitter:image" content="https://cameronhum.github.io/while-ago/media/icon.png">
   <link rel="stylesheet" href="site.css">
   <script type="application/ld+json">
@@ -28,14 +28,14 @@
         "@type": "WebPage",
         "@id": "https://cameronhum.github.io/while-ago/#page",
         "url": "https://cameronhum.github.io/while-ago/",
-        "name": "While Ago — A quiet local activity tracker for Windows",
-        "description": "While Ago is a Windows app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged what you do. No account. Times stay on the PC.",
+        "name": "While Ago — Local Time Tracker for Windows",
+        "description": "While Ago is a Windows desktop app by Cameron S Humphries. Cards on a canvas show how long it has been since you logged an activity. No account. Times stay on the PC.",
         "inLanguage": "en",
         "about": { "@id": "https://cameronhum.github.io/while-ago/#app" },
         "primaryImageOfPage": "https://cameronhum.github.io/while-ago/media/window.jpg",
         "significantLink": "https://cameronhum.github.io/while-ago/privacy.html",
         "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["#summary"] },
-        "dateModified": "2026-11-03"
+        "dateModified": "2026-11-08"
       },
       {
         "@type": "Person",
@@ -46,11 +46,12 @@
         "@type": "SoftwareApplication",
         "@id": "https://cameronhum.github.io/while-ago/#app",
         "name": "While Ago",
-        "keywords": "local activity tracker, Windows habit canvas, personal time tracker, offline activity log",
+        "keywords": "local time tracker, Windows activity tracker, offline activity log, how long since",
         "url": "https://cameronhum.github.io/while-ago/",
         "applicationCategory": "LifestyleApplication",
         "operatingSystem": "Windows 10, Windows 11",
         "softwareVersion": "0.1.0",
+        "softwareRequirements": "Windows 10 or Windows 11 desktop, with the Microsoft Edge WebView2 runtime",
         "image": "https://cameronhum.github.io/while-ago/media/icon.png",
         "screenshot": [
           "https://cameronhum.github.io/while-ago/media/window.jpg",
@@ -63,10 +64,10 @@
           "Workspaces, with the pan and zoom remembered for each one",
           "List and chart of the same activities",
           "Search, light and dark, and archive",
-          "Export and import a JSON backup",
+          "Export and import a JSON backup named while-ago.json",
           "No account, no server, no ads, and no analytics. Times stay in localStorage on the PC"
         ],
-        "description": "While Ago keeps the time of things you do on a canvas of cards. There is no account. The times stay on the PC.",
+        "description": "While Ago is a local-first time tracker for Windows. Cards on a canvas show how long it has been since you logged an activity. There is no account. The times stay on the PC.",
         "author": { "@id": "https://cameronhum.github.io/#cameron" },
         "publisher": { "@id": "https://cameronhum.github.io/#cameron" }
       },
@@ -80,7 +81,7 @@
             "name": "What is While Ago?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "While Ago is a Windows app by Cameron S Humphries. It keeps the time of things you do, things you would rather do less, and things you only want to remember. Each activity is a card on a canvas."
+              "text": "While Ago is a Windows desktop app by Cameron S Humphries. It keeps the time of things you do, things you would rather do less, and things you only want to remember. Each activity is a card on a canvas."
             }
           },
           {
@@ -112,7 +113,15 @@
             "name": "Can I back up While Ago?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. The header menu has Export backup, which downloads a JSON file named while-ago.json. Import backup reads that file back onto the device. The file stays wherever you save it."
+              "text": "Yes. The header menu has Export backup, which downloads a JSON file named while-ago.json. Import backup reads that file back onto the device. The file stays wherever you save it. While Ago does not send the file."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which versions of Windows run While Ago?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While Ago 0.1.0 is a desktop app for Windows 10 and Windows 11. The window is drawn with the Microsoft Edge WebView2 runtime, which Windows 11 includes and which current Windows 10 installs include as well."
             }
           }
         ]
@@ -141,9 +150,10 @@
       </div>
     </div>
 
-    <p class="lead" id="summary">While Ago is a Windows app by Cameron S Humphries. It keeps the time of things you do, things you would rather do less, and things you only want to remember. Each one is a card on a canvas. A card grows as more time passes since you last logged it.</p>
+    <p class="lead" id="summary">While Ago is a Windows desktop app by Cameron S Humphries. It keeps the time of things you do, things you would rather do less, and things you only want to remember. Each one is a card on a canvas. A card grows as more time passes since you last logged it.</p>
 
     <button class="store" type="button">Get While Ago on Microsoft Store</button>
+    <p class="meta">The Microsoft Store listing is not open yet. This page does not take a payment.</p>
 
     <div class="reel">
       <div class="reel-track">
@@ -182,9 +192,9 @@
       <li>Export backup downloads a JSON file. Import backup brings that file back.</li>
     </ul>
 
-    <h2>A local activity tracker for Windows</h2>
-    <p>Unlike a tracker that keeps an account on a server, While Ago keeps the times on the computer where you type them. The cards sit in a cluster with a soft cloud behind them. You move around the canvas instead of scrolling a feed.</p>
-    <p>You can switch workspace, change the view, and open a card to log an earlier time. No account is required.</p>
+    <h2>A local time tracker for Windows</h2>
+    <p>While Ago keeps the times on the computer where you type them. The cards sit in a cluster with a soft cloud behind them. You move around the canvas. A card that has waited longer takes more space, so a quiet one is easier to see. The card shows the elapsed time, and it can say when that wait is past the usual gap.</p>
+    <p>You can switch workspace, change between canvas, list, and chart, and open a card to log an earlier time. No account is required.</p>
 
     <h2>Canvas</h2>
     <p>The canvas is the main view. Cards that have waited longer take more space, so the ones that have been quiet are easier to see. Drag a card to move it. The space between cards stays clear. Pan and zoom are kept for that workspace, and the first visit fits every card in view.</p>
@@ -192,15 +202,24 @@
     <h2>Workspaces</h2>
     <p>Personal and work are separate canvases. The names sit in the header. Adding a workspace starts it with no activities. Switching workspace jumps straight to that canvas, including its cloud, and restores the pan and zoom you left there.</p>
 
+    <h2>List and chart</h2>
+    <p>List shows the same activities as names and times, which is easier when you want to scan. Chart shows how the logs sit over time. Both read the activities already on this PC. Changing the view does not upload them.</p>
+
+    <h2>Search and archive</h2>
+    <p>Search filters the activities by name. Archive sets a card aside and keeps its history, so the canvas can stay on the activities you still want in front of you. Light and dark is saved on this PC and is still selected the next time you open the window.</p>
+
+    <h2>Backup</h2>
+    <p>Export backup, in the header menu, downloads a JSON file named while-ago.json. Import backup reads a file you choose and puts those activities back on this PC. The file stays where you save it. While Ago does not send it. The steps are also on the <a href="support.html">support page</a>.</p>
+
     <h2>On your PC</h2>
-    <p>While Ago runs in a Windows window. The times, workspaces, card positions, and the light or dark choice are saved on that PC so they are still there the next time you open the app. They stay on that PC.</p>
-    <p>There is no account and no sign-in. While Ago does not show ads, does not include analytics, and does not send what you log to Cameron S Humphries or to anyone else. It is not sold on a store.</p>
+    <p>While Ago 0.1.0 runs in a Windows desktop window on Windows 10 and Windows 11. The window is drawn with the Microsoft Edge WebView2 runtime, which Windows 11 includes and which current Windows 10 installs include as well. The times, notes, workspaces, card positions, pan and zoom, and the light or dark choice are saved on that PC so they are still there the next time you open the app. They stay on that PC.</p>
+    <p>There is no account and no sign-in. While Ago does not show ads, does not include analytics, and does not send what you log to Cameron S Humphries or to anyone else. The Microsoft Store listing is not open yet. This website does not take a payment.</p>
 
     <h2>FAQ</h2>
     <div class="faq">
       <details>
         <summary>What is While Ago?</summary>
-        <p>While Ago is a Windows app by Cameron S Humphries. It keeps the time of things you do, things you would rather do less, and things you only want to remember. Each activity is a card on a canvas.</p>
+        <p>While Ago is a Windows desktop app by Cameron S Humphries. It keeps the time of things you do, things you would rather do less, and things you only want to remember. Each activity is a card on a canvas.</p>
       </details>
       <details>
         <summary>What can While Ago do?</summary>
@@ -216,11 +235,15 @@
       </details>
       <details>
         <summary>Can I back up While Ago?</summary>
-        <p>Yes. The header menu has Export backup, which downloads a JSON file named while-ago.json. Import backup reads that file back onto the device. The file stays wherever you save it.</p>
+        <p>Yes. The header menu has Export backup, which downloads a JSON file named while-ago.json. Import backup reads that file back onto the device. The file stays wherever you save it. While Ago does not send the file.</p>
+      </details>
+      <details>
+        <summary>Which versions of Windows run While Ago?</summary>
+        <p>While Ago 0.1.0 is a desktop app for Windows 10 and Windows 11. The window is drawn with the Microsoft Edge WebView2 runtime, which Windows 11 includes and which current Windows 10 installs include as well.</p>
       </details>
     </div>
 
-    <h2>Support</h2>
+    <h2 id="support">Support</h2>
     <div class="support">
       <form class="card" action="https://github.com/cameronhum/apps/issues/new" method="get" target="_blank">
         <h3>Report a bug</h3>
@@ -231,6 +254,7 @@
         <button type="submit">Report a bug</button>
       </form>
       <p class="kofi"><a href="https://ko-fi.com/cameronhumphries"><img src="https://cameronhum.github.io/apps/cymatic/media/kofi.png" width="580" height="146" alt="Buy me a coffee on Ko-fi"></a></p>
+      <p>Ko-fi is optional. The <a href="donate.html">donate page</a> has no checkout, and a gift there does not send the activity log.</p>
     </div>
 
     <h2>Privacy</h2>
