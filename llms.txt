@@ -32,10 +32,10 @@ Capabilities: canvas with pan and zoom, remembered per workspace. Separate works
 
 There is no account and no server. The app does not show ads and does not include analytics. Times, notes, workspaces, card positions, and settings stay in localStorage on the PC, under the local app data folder for com.whileago.app. They are not uploaded. While Ago is not currently available on the Microsoft Store. This website does not take a payment and does not offer a download.
 
-- App page: https://cameronhum.github.io/while-ago/
-- Privacy: https://cameronhum.github.io/while-ago/privacy.html
-- Support: https://cameronhum.github.io/while-ago/support.html
-- Donate: https://cameronhum.github.io/while-ago/donate.html
+- App page: https://cameronhum.github.io/apps/while-ago/
+- Privacy: https://cameronhum.github.io/apps/while-ago/privacy/
+- Support: https://cameronhum.github.io/apps/while-ago/support.html
+- Donate: https://cameronhum.github.io/apps/while-ago/donate.html
 - Publisher: Cameron S Humphries
 - System: Windows 10 and Windows 11 desktop
 - Account: None
