@@ -15,7 +15,8 @@ p.lead { margin: 0.85rem 0 1.4rem; color: #6e6e73; }
 .title img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
 p.by { color: #6e6e73; margin: 0.15rem 0 0; }
 p.lead { color: #1d1d1f; }
-button.store { display: inline-block; width: 176px; height: 48px; margin: 0 0.75rem 0.75rem 0; padding: 0; border: 0; background: url("media/badge-light.svg") center / contain no-repeat; border-radius: 5px; box-shadow: 0 0 0 1px rgba(0,0,0,0.12); color: transparent; font-size: 1rem; line-height: 48px; overflow: hidden; white-space: nowrap; cursor: default; vertical-align: middle; }
+a.store, img.store { display: inline-block; width: 176px; height: 48px; margin: 0 0 0.75rem; padding: 0; border: 0; border-radius: 5px; box-shadow: 0 0 0 1px rgba(0,0,0,0.12); vertical-align: middle; object-fit: contain; }
+a.store { background: url("media/badge-light.svg") center / contain no-repeat; color: transparent; font-size: 1rem; line-height: 48px; overflow: hidden; white-space: nowrap; text-decoration: none; }
 a.repo { display: inline-block; background: #1d1d1f; color: #fff; text-decoration: none; border-radius: 980px; padding: 0.55rem 1.05rem; font-weight: 600; vertical-align: middle; }
 .reel { position: relative; margin: 1.6rem 0 0; container-type: inline-size; }
 .reel-track { display: flex; gap: 0.55rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
