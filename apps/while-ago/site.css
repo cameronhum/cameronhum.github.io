@@ -22,9 +22,9 @@ a.repo { display: inline-block; background: #1d1d1f; color: #fff; text-decoratio
 .reel-track { display: flex; gap: 0.55rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
 .reel-track::-webkit-scrollbar { display: none; }
 .reel-track figure { flex: none; width: calc((100% - 1.1rem) / 3); margin: 0; scroll-snap-align: start; }
-.reel-track img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: center; border-radius: 14px; background: #f5f5f7; }
+.reel-track img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: center; border-radius: 14px; background: #f5f5f7; }
 .reel-track figcaption { color: #6e6e73; font-size: 0.78rem; margin: 0.35rem 0 0; text-align: center; }
-.reel-btn { position: absolute; top: calc((100cqi - 1.1rem) / 6); transform: translateY(-50%); width: 2rem; height: 2rem; border: 0; border-radius: 50%; background: rgba(255,255,255,0.94); box-shadow: 0 1px 4px rgba(0,0,0,0.16); cursor: pointer; }
+.reel-btn { position: absolute; top: calc((100cqi - 1.1rem) * 9 / 32); transform: translateY(-50%); width: 2rem; height: 2rem; border: 0; border-radius: 50%; background: rgba(255,255,255,0.94); box-shadow: 0 1px 4px rgba(0,0,0,0.16); cursor: pointer; }
 .reel-btn.prev { left: 0.55rem; }
 .reel-btn.next { right: 0.55rem; }
 .reel-btn::before { content: ""; display: block; width: 0.42rem; height: 0.42rem; border-right: 1.5px solid #1d1d1f; border-bottom: 1.5px solid #1d1d1f; }
@@ -57,7 +57,7 @@ p.meta { color: #6e6e73; margin: 0.35rem 0 0; }
   main { padding-top: 1.75rem; }
   h1 { font-size: 2rem; }
   .reel-track figure { width: calc((100% - 0.55rem) / 2); }
-  .reel-btn { top: calc((100cqi - 0.55rem) / 4); }
+  .reel-btn { top: calc((100cqi - 0.55rem) * 9 / 32); }
 }
 @media (prefers-reduced-motion: reduce) {
   .reel-track { scroll-behavior: auto; }
