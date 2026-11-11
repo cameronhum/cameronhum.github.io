@@ -26,17 +26,19 @@ Cymatic is a Windows cymatics and music visualization application that transform
 
 ## While Ago
 
-While Ago is a Windows desktop application by Cameron S Humphries. It is a local-first time tracker. Each activity is a card on a canvas. A card grows as more time passes since you last logged it. Cards can be for something you want to do more, something you want to do less, or something you only want to remember.
+While Ago is a free Windows last-done and activity tracker by Cameron S Humphries. It tracks when you last did things: a time-since tracker and routine tracker with growing cards on visual workspaces. Organise habits, routines and activities, switch between canvas, list and chart views, and keep everything in private offline storage on the PC.
 
-Capabilities: canvas with pan and zoom, remembered per workspace. Separate workspaces. List and chart of the same activities. Search, light and dark, and archive. A rhythm can be daily, every few days, weekly, monthly, custom, or learned from the gaps already logged.
+Key features: canvas with pan and zoom, remembered per workspace. Separate workspaces. List and chart of the same activities. Search, light and dark, and archive. A rhythm can be daily, every few days, weekly, monthly, custom, or learned from gaps you have already logged. Windows 10 and Windows 11 desktop.
 
-There is no account and no server. The app does not show ads and does not include analytics. Times, notes, workspaces, card positions, and settings stay in localStorage on the PC, under the local app data folder for com.whileago.app. They are not uploaded. While Ago is a Microsoft Store app. Microsoft handles the listing. This website does not take a payment.
+There is no account and no server. The app does not show ads and does not include analytics. Times, notes, workspaces, card positions, and settings stay in localStorage on the PC, under the local app data folder for com.whileago.app. They are not uploaded.
 
 - App page: https://cameronhum.github.io/apps/while-ago/
 - Privacy: https://cameronhum.github.io/apps/while-ago/privacy/
 - Support: https://cameronhum.github.io/apps/while-ago/support.html
 - Donate: https://cameronhum.github.io/apps/while-ago/donate.html
 - Publisher: Cameron S Humphries
-- System: Windows 10 and Windows 11 desktop
+- Platform: Windows 10 and Windows 11
+- Pricing: Free on the Microsoft Store
+- Microsoft Store: https://apps.microsoft.com/detail/9P3HGRVDRNG0
 - Account: None
-- Storage: On the PC only
+- Storage: On the PC only (offline)
