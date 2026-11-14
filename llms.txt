@@ -1,6 +1,6 @@
 # Cameron S Humphries
 
-> Independent Windows apps by Cameron S Humphries: Cymatic, an interactive cymatics and music visualiser that turns PC audio into water patterns, and While Ago, a free offline last-done and habit tracker. Both are sold or distributed through the Microsoft Store.
+> Independent Windows apps by Cameron S Humphries: Cymatic, an interactive cymatics and music visualiser that turns PC audio into water patterns, and While Ago, an offline last-done and habit tracker. Both are sold on the Microsoft Store.
 
 Each app has its own page on this site with features, an FAQ, system requirements, and a privacy policy. Neither app has an account, ads, or analytics, and app data stays on the user's PC.
 
@@ -13,20 +13,20 @@ Cymatic is an interactive Windows cymatics and music visualiser that turns PC au
 
 Controls include drive, settle, wave speed, stroke, pitch follow, loudness follow, overtone, amplitude, crests, light, and ambient. Colours are Water, Ink, Gold, Iridescent, Galaxy, Aurora, Ember, and Blood. Surface is normal, low poly, wireframe, or dots. Perimeter is glass, a ring, a fade, or none.
 
-PC audio is read on that computer while the window is open. It is not recorded, saved, or transmitted. No microphone, account, or subscription is needed. Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11. It is a one-time purchase of USD $0.99 on the Microsoft Store, and Microsoft processes the payment.
+PC audio is read on that computer while the window is open. It is not recorded, saved, or transmitted. No microphone, account, or subscription is needed. Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11. It is a one-time purchase of AUD $1.50 on the Microsoft Store, and Microsoft processes the payment.
 
 - [Cymatic app page](https://cameronhum.github.io/apps/cymatic/): Features, screenshots, FAQ, pricing, and system requirements
-- [Download Cymatic on the Microsoft Store](https://apps.microsoft.com/detail/9n09bgpd2857): Official Store listing, one-time purchase of USD $0.99
+- [Download Cymatic on the Microsoft Store](https://apps.microsoft.com/detail/9n09bgpd2857): Official Store listing, one-time purchase of AUD $1.50
 - [Cymatic privacy policy](https://cameronhum.github.io/apps/cymatic/privacy/): What the app does with PC audio and settings
 
 ## While Ago
 
-While Ago is a free Windows last-done and activity tracker. It tracks when you last did things: each habit or routine is a card on a visual workspace, and the card grows as more time passes. Switch between canvas, list, and chart views, keep separate named workspaces, search, archive, and use light or dark mode.
+While Ago is a Windows last-done and activity tracker. It tracks when you last did things: each habit or routine is a card on a visual workspace, and the card grows as more time passes. Switch between canvas, list, and chart views, keep separate named workspaces, search, archive, and use light or dark mode.
 
-A rhythm can be daily, every few days, weekly, monthly, custom, or learned from gaps already logged. There is no account and no server. Times, notes, workspaces, card positions, and settings stay in local storage on the PC, under the local app data folder for com.whileago.app, and are not uploaded. It runs on Windows 10 and Windows 11 and is free on the Microsoft Store.
+A rhythm can be daily, every few days, weekly, monthly, custom, or learned from gaps already logged. There is no account and no server. Times, notes, workspaces, card positions, and settings stay in local storage on the PC, under the local app data folder for com.whileago.app, and are not uploaded. It runs on Windows 10 and Windows 11 and is a one-time purchase of AUD $1.50 on the Microsoft Store.
 
 - [While Ago app page](https://cameronhum.github.io/apps/while-ago/): Features, screenshots, FAQ, and system requirements
-- [Get While Ago on the Microsoft Store](https://apps.microsoft.com/detail/9P3HGRVDRNG0): Official Store listing, free
+- [Get While Ago on the Microsoft Store](https://apps.microsoft.com/detail/9P3HGRVDRNG0): Official Store listing, one-time purchase of AUD $1.50
 - [While Ago privacy policy](https://cameronhum.github.io/apps/while-ago/privacy/): How times and settings stay on the PC
 - [While Ago support](https://cameronhum.github.io/apps/while-ago/support.html): Report a bug or ask a question
 - [Donate to While Ago](https://cameronhum.github.io/apps/while-ago/donate.html): Optional support for the developer
