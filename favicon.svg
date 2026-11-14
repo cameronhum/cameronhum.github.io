@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" role="img" aria-label="Cameron S Humphries">
+  <rect x="2" y="2" width="52" height="52" rx="15" fill="#1d1d1f"/>
+  <path d="M43.46 39.04A19 19 0 1 1 43.46 16.96" fill="none" stroke="#ffffff" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M36.25 37.39A12.5 12.5 0 1 1 36.25 18.61" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M30.95 33.79A6.5 6.5 0 1 1 30.95 22.21" fill="none" stroke="#2a9d9d" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="37" cy="28" r="2.4" fill="#2a9d9d"/>
+</svg>

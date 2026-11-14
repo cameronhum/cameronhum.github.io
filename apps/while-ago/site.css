@@ -3,7 +3,14 @@ a { color: #0066cc; }
 header.site { position: sticky; top: 0; z-index: 2; background: rgba(255,255,255,0.86); border-bottom: 1px solid rgba(0,0,0,0.08); backdrop-filter: saturate(180%) blur(20px); }
 header.site nav { max-width: 40rem; margin: 0 auto; padding: 0.75rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 header.site a { color: #6e6e73; text-decoration: none; transition: color 0.2s ease; }
-header.site a.brand { color: #1d1d1f; font-weight: 600; }
+header.site a.brand {
+  color: #1d1d1f;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+header.site a.brand img { width: 28px; height: 28px; border-radius: 7px; flex: none; display: block; }
 header.site .apps { display: flex; gap: 1.1rem; }
 header.site .apps a[aria-current="page"] { color: #1d1d1f; }
 header.site a:focus-visible, a:focus-visible { outline: 2px solid #0066cc; outline-offset: 3px; }
