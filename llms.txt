@@ -31,6 +31,24 @@ A rhythm can be daily, every few days, weekly, monthly, custom, or learned from 
 - [While Ago support](https://cameronhum.github.io/apps/while-ago/support.html): Report a bug or ask a question
 - [Donate to While Ago](https://cameronhum.github.io/apps/while-ago/donate.html): Optional support for the developer
 
+## Ambry
+
+Ambry is a meals, pantry, and shopping list. Tick the meals you want to cook. Ambry checks the ingredients against food already in the house, orders what you can cook next, and lists what you still need to buy. Have and Get hold the cupboard and the shopping. Each food can have a note, a quantity, and an expiry.
+
+With no sign-in, the list stays in the browser. Sign in with email or Google to share one household with an invite code. The shared copy is stored with Google Firebase. Ambry is not on the Microsoft Store and is not for sale.
+
+- [Ambry app page](https://cameronhum.github.io/apps/ambry/): Features, screenshots, FAQ, and how the list is stored
+- [Ambry privacy policy](https://cameronhum.github.io/apps/ambry/privacy/): What stays in the browser, and what a shared household stores
+
+## Evercake
+
+Evercake is a birthday calendar for Windows and Android. Home shows who is next, and birthday days fill the calendar. A person can hold a photo, a gift idea, a party note, likes, facts, and a reminder. A 29 February birthday is kept on 28 February in other years. Looks include Soft Sky, Midnight Party, Garden, and Clean Light.
+
+There is no account. People, photos, notes, and reminders stay on the device. Evercake is not on the Microsoft Store or Google Play yet, and it is not for sale.
+
+- [Evercake app page](https://cameronhum.github.io/apps/evercake/): Features, FAQ, and system notes
+- [Evercake privacy policy](https://cameronhum.github.io/apps/evercake/privacy/): People and photos stay on the device
+
 ## Optional
 
 - [Support Cameron on Ko-fi](https://ko-fi.com/cameronhumphries): Optional tip jar for both apps

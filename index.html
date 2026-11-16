@@ -41,7 +41,7 @@
     .app-row.upcoming { cursor: default; }
     .app-row.upcoming .main { display: flex; gap: 0.9rem; align-items: center; flex: 1; min-width: 0; }
     .app-row.upcoming .main img { width: 64px; height: 64px; border-radius: 14px; flex: none; }
-    .app-row.upcoming .title-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.45rem 0.65rem; }
+    .app-row .title-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.45rem 0.65rem; }
     .soon { font-size: 0.78rem; font-weight: 600; color: #6e6e73; letter-spacing: 0.02em; text-transform: uppercase; }
     .working { font-size: 0.82rem; font-weight: 500; color: #6e6e73; }
     p.section-note { color: #6e6e73; font-size: 0.92rem; margin: 0.15rem 0 0; }
@@ -80,6 +80,18 @@
             "position": 2,
             "name": "While Ago",
             "url": "https://cameronhum.github.io/apps/while-ago/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ambry",
+            "url": "https://cameronhum.github.io/apps/ambry/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Evercake",
+            "url": "https://cameronhum.github.io/apps/evercake/"
           }
         ]
       }
@@ -95,6 +107,8 @@
         <a href="/" aria-current="page">Home</a>
         <a href="/apps/cymatic/">Cymatic</a>
         <a href="/apps/while-ago/">While Ago</a>
+        <a href="/apps/ambry/">Ambry</a>
+        <a href="/apps/evercake/">Evercake</a>
       </div>
     </nav>
   </header>
@@ -152,7 +166,19 @@
     </div>
     <div class="app-row upcoming">
       <div class="main">
-        <img src="/media/upcoming/ambry.webp" width="128" height="128" alt="">
+        <img src="/media/upcoming/catchify.webp" width="128" height="128" alt="">
+        <span>
+          <span class="title-line">
+            <strong>Catchify</strong>
+            <span class="soon">Coming soon</span>
+          </span>
+          <span class="what">Spotify catch-up. Find newer songs from artists already in your playlists, choose the ones you missed, and add them to a playlist.</span>
+        </span>
+      </div>
+    </div>
+    <div class="app-row">
+      <a class="main" href="/apps/ambry/">
+        <img src="/apps/ambry/media/icon.webp" width="144" height="144" alt="">
         <span>
           <span class="title-line">
             <strong>Ambry</strong>
@@ -160,11 +186,11 @@
           </span>
           <span class="what">Meals, pantry, and a shared shopping list. A cupboard for what the house has and what it still needs.</span>
         </span>
-      </div>
+      </a>
     </div>
-    <div class="app-row upcoming">
-      <div class="main">
-        <img src="/media/upcoming/evercake.webp" width="128" height="128" alt="">
+    <div class="app-row">
+      <a class="main" href="/apps/evercake/">
+        <img src="/apps/evercake/media/icon.webp" width="144" height="144" alt="">
         <span>
           <span class="title-line">
             <strong>Evercake</strong>
@@ -172,7 +198,7 @@
           </span>
           <span class="what">Birthday calendar for Windows and Android. See who is next, set reminders, and keep photos on each person’s day.</span>
         </span>
-      </div>
+      </a>
     </div>
   </main>
 </body>
