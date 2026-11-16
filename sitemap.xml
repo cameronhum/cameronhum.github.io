@@ -1,71 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cameronhum.github.io/</loc>
+    <loc>https://cymaware.app/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/cymatic/</loc>
+    <loc>https://cymaware.app/privacy/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/cymatic/privacy/</loc>
+    <loc>https://cymaware.app/apps/cymatic/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/while-ago/</loc>
+    <loc>https://cymaware.app/apps/cymatic/privacy/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/while-ago/privacy/</loc>
-    <lastmod>2026-11-11</lastmod>
-  </url>
-  <url>
-    <loc>https://cameronhum.github.io/apps/while-ago/support.html</loc>
-    <lastmod>2026-11-11</lastmod>
-  </url>
-  <url>
-    <loc>https://cameronhum.github.io/apps/while-ago/donate.html</loc>
-    <lastmod>2026-11-11</lastmod>
-  </url>
-  <url>
-    <loc>https://cameronhum.github.io/apps/cymavolt/</loc>
+    <loc>https://cymaware.app/apps/while-ago/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/cymavolt/privacy/</loc>
+    <loc>https://cymaware.app/apps/while-ago/privacy/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/cloud-shatter/</loc>
+    <loc>https://cymaware.app/apps/while-ago/support.html</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/cloud-shatter/privacy/</loc>
+    <loc>https://cymaware.app/apps/while-ago/donate.html</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/catchify/</loc>
+    <loc>https://cymaware.app/apps/cymavolt/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/catchify/privacy/</loc>
+    <loc>https://cymaware.app/apps/cymavolt/privacy/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/ambry/</loc>
+    <loc>https://cymaware.app/apps/cloud-shatter/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/ambry/privacy/</loc>
+    <loc>https://cymaware.app/apps/cloud-shatter/privacy/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/evercake/</loc>
+    <loc>https://cymaware.app/apps/catchify/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://cameronhum.github.io/apps/evercake/privacy/</loc>
+    <loc>https://cymaware.app/apps/catchify/privacy/</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cymaware.app/apps/ambry/</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cymaware.app/apps/ambry/privacy/</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cymaware.app/apps/evercake/</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cymaware.app/apps/evercake/privacy/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
 </urlset>

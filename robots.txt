@@ -22,4 +22,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://cameronhum.github.io/sitemap.xml
+Sitemap: https://cymaware.app/sitemap.xml

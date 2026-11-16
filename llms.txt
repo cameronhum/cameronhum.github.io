@@ -1,11 +1,12 @@
-# Cameron S Humphries
+# Cymaware
 
-> Independent software by Cameron S Humphries. Cymatic, a cymatics and music visualiser, and While Ago, an offline last-done tracker, are on the Microsoft Store for AUD $1.50. CymaVolt, Cloud Shatter, Catchify, Ambry, and Evercake are in development and are not for sale.
+> Cymaware is a collection of independent software, utilities and games by Cameron Stewart Humphries, an Australian sole trader. Cymaware is the name of this website, not a separate company. Cymatic, a cymatics and music visualiser, and While Ago, an offline last-done tracker, are on the Microsoft Store for AUD $1.50. CymaVolt, Cloud Shatter, Catchify, Ambry, and Evercake are in development and are not for sale.
 
 Each app has its own page on this site. Cymatic and While Ago have no account, no ads, and no analytics, and their data stays on the PC. The apps in development are described on their own pages, including what is not available yet.
 
-- [Home](https://cameronhum.github.io/): List of apps by Cameron S Humphries
-- [Sitemap](https://cameronhum.github.io/sitemap.xml): Every public page on this site
+- [Home](https://cymaware.app/): Cymaware, independent software, utilities and games by Cameron Stewart Humphries
+- [Sitemap](https://cymaware.app/sitemap.xml): Every public page on this site
+- [Website privacy](https://cymaware.app/privacy/): Privacy information for visitors to this website. Each app keeps its own privacy policy.
 
 ## Cymatic
 
@@ -15,9 +16,9 @@ Controls include drive, settle, wave speed, stroke, pitch follow, loudness follo
 
 PC audio is read on that computer while the window is open. It is not recorded, saved, or transmitted. No microphone, account, or subscription is needed. Cymatic runs on 64-bit Windows 10 version 2004 (build 19041) or later, including Windows 11. It is a one-time purchase of AUD $1.50 on the Microsoft Store, and Microsoft processes the payment.
 
-- [Cymatic app page](https://cameronhum.github.io/apps/cymatic/): Features, screenshots, FAQ, pricing, and system requirements
+- [Cymatic app page](https://cymaware.app/apps/cymatic/): Features, screenshots, FAQ, pricing, and system requirements
 - [Download Cymatic on the Microsoft Store](https://apps.microsoft.com/detail/9n09bgpd2857): Official Store listing, one-time purchase of AUD $1.50
-- [Cymatic privacy policy](https://cameronhum.github.io/apps/cymatic/privacy/): What the app does with PC audio and settings
+- [Cymatic privacy policy](https://cymaware.app/apps/cymatic/privacy/): What the app does with PC audio and settings
 
 ## While Ago
 
@@ -25,11 +26,11 @@ While Ago is a Windows last-done and activity tracker. It tracks when you last d
 
 A rhythm can be daily, every few days, weekly, monthly, custom, or learned from gaps already logged. There is no account and no server. Times, notes, workspaces, card positions, and settings stay in local storage on the PC, under the local app data folder for com.whileago.app, and are not uploaded. It runs on Windows 10 and Windows 11 and is a one-time purchase of AUD $1.50 on the Microsoft Store.
 
-- [While Ago app page](https://cameronhum.github.io/apps/while-ago/): Features, screenshots, FAQ, and system requirements
+- [While Ago app page](https://cymaware.app/apps/while-ago/): Features, screenshots, FAQ, and system requirements
 - [Get While Ago on the Microsoft Store](https://apps.microsoft.com/detail/9P3HGRVDRNG0): Official Store listing, one-time purchase of AUD $1.50
-- [While Ago privacy policy](https://cameronhum.github.io/apps/while-ago/privacy/): How times and settings stay on the PC
-- [While Ago support](https://cameronhum.github.io/apps/while-ago/support.html): Report a bug or ask a question
-- [Donate to While Ago](https://cameronhum.github.io/apps/while-ago/donate.html): Optional support for the developer
+- [While Ago privacy policy](https://cymaware.app/apps/while-ago/privacy/): How times and settings stay on the PC
+- [While Ago support](https://cymaware.app/apps/while-ago/support.html): Report a bug or ask a question
+- [Donate to While Ago](https://cymaware.app/apps/while-ago/donate.html): Optional support for the developer
 
 ## CymaVolt
 
@@ -37,8 +38,8 @@ CymaVolt is a bench for guitar-pedal circuits. Place resistors, capacitors, diod
 
 There is no account. Circuits are not uploaded. CymaVolt is not on the Microsoft Store and is not for sale yet.
 
-- [CymaVolt app page](https://cameronhum.github.io/apps/cymavolt/): Features, FAQ, and how a design is stored
-- [CymaVolt privacy policy](https://cameronhum.github.io/apps/cymavolt/privacy/): Designs stay in the browser
+- [CymaVolt app page](https://cymaware.app/apps/cymavolt/): Features, FAQ, and how a design is stored
+- [CymaVolt privacy policy](https://cymaware.app/apps/cymavolt/privacy/): Designs stay in the browser
 
 ## Cloud Shatter
 
@@ -46,8 +47,8 @@ Cloud Shatter is an arcade dogfight for Windows. A match is 1v1, 2v2, 4v4, or a 
 
 There is no account. Gold, gems, and the fitted aircraft stay on the PC. Cloud Shatter is not on the Microsoft Store and is not for sale. Gold and gems are inside the game.
 
-- [Cloud Shatter app page](https://cameronhum.github.io/apps/cloud-shatter/): Features, screenshots, FAQ, and where the hangar is saved
-- [Cloud Shatter privacy policy](https://cameronhum.github.io/apps/cloud-shatter/privacy/): The hangar stays on the PC
+- [Cloud Shatter app page](https://cymaware.app/apps/cloud-shatter/): Features, screenshots, FAQ, and where the hangar is saved
+- [Cloud Shatter privacy policy](https://cymaware.app/apps/cloud-shatter/privacy/): The hangar stays on the PC
 
 ## Catchify
 
@@ -55,8 +56,8 @@ Catchify is a Spotify catch-up. Pick playlists, including liked songs. It lists 
 
 Catchify has no account of its own and no server. You log in with Spotify, and the tokens stay in the browser. It is not on the Microsoft Store and is not for sale. It runs in the browser, which can install it on Windows, Android, or iPhone.
 
-- [Catchify app page](https://cameronhum.github.io/apps/catchify/): Features, FAQ, and how Spotify login is stored
-- [Catchify privacy policy](https://cameronhum.github.io/apps/catchify/privacy/): Tokens stay in the browser, and there is no Catchify server
+- [Catchify app page](https://cymaware.app/apps/catchify/): Features, FAQ, and how Spotify login is stored
+- [Catchify privacy policy](https://cymaware.app/apps/catchify/privacy/): Tokens stay in the browser, and there is no Catchify server
 
 ## Ambry
 
@@ -64,8 +65,8 @@ Ambry is a meals, pantry, and shopping list. Tick the meals you want to cook. Am
 
 With no sign-in, the list stays in the browser. Sign in with email or Google to share one household with an invite code. The shared copy is stored with Google Firebase. Ambry is not on the Microsoft Store and is not for sale.
 
-- [Ambry app page](https://cameronhum.github.io/apps/ambry/): Features, screenshots, FAQ, and how the list is stored
-- [Ambry privacy policy](https://cameronhum.github.io/apps/ambry/privacy/): What stays in the browser, and what a shared household stores
+- [Ambry app page](https://cymaware.app/apps/ambry/): Features, screenshots, FAQ, and how the list is stored
+- [Ambry privacy policy](https://cymaware.app/apps/ambry/privacy/): What stays in the browser, and what a shared household stores
 
 ## Evercake
 
@@ -73,8 +74,8 @@ Evercake is a birthday calendar for Windows and Android. Home shows who is next,
 
 There is no account. People, photos, notes, and reminders stay on the device. Evercake is not on the Microsoft Store or Google Play yet, and it is not for sale.
 
-- [Evercake app page](https://cameronhum.github.io/apps/evercake/): Features, FAQ, and system notes
-- [Evercake privacy policy](https://cameronhum.github.io/apps/evercake/privacy/): People and photos stay on the device
+- [Evercake app page](https://cymaware.app/apps/evercake/): Features, FAQ, and system notes
+- [Evercake privacy policy](https://cymaware.app/apps/evercake/privacy/): People and photos stay on the device
 
 ## Optional
 

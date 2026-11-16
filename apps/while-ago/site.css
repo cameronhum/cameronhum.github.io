@@ -6,6 +6,8 @@ header.site a { color: #6e6e73; text-decoration: none; transition: color 0.2s ea
 header.site a.brand {
   color: #1d1d1f;
   font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
@@ -26,13 +28,14 @@ header.site .menu.open .menu-list { display: flex; flex-direction: column; }
 header.site .menu-list a { color: #1d1d1f; padding: 0.4rem 0.65rem; border-radius: 8px; }
 header.site .menu-list a:hover { background: #f5f5f7; }
 header.site a:focus-visible, a:focus-visible { outline: 2px solid #0066cc; outline-offset: 3px; }
-main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.25rem 4.5rem; }
+main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.25rem 2rem; }
 h1 { font-size: 2.5rem; font-weight: 600; letter-spacing: -0.022em; margin: 0; }
 h2 { font-size: 1.05rem; font-weight: 600; margin: 2.25rem 0 0.45rem; letter-spacing: -0.01em; }
 p.lead { margin: 0.85rem 0 1.4rem; color: #6e6e73; }
 .title { display: flex; gap: 0.9rem; align-items: center; }
 .title img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
 p.by { color: #6e6e73; margin: 0.15rem 0 0; }
+p.meta { color: #6e6e73; margin: 0.35rem 0 0; }
 p.lead { color: #1d1d1f; }
 a.store, img.store { display: inline-block; width: 176px; height: 48px; margin: 0 0 0.75rem; padding: 0; border: 0; border-radius: 5px; box-shadow: 0 0 0 1px rgba(0,0,0,0.12); vertical-align: middle; object-fit: contain; }
 a.store { background: url("media/badge-light.svg") center / contain no-repeat; color: transparent; font-size: 1rem; line-height: 48px; overflow: hidden; white-space: nowrap; text-decoration: none; }
@@ -95,3 +98,7 @@ p.meta { color: #6e6e73; margin: 0.35rem 0 0; }
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: none; }
 }
+
+footer.site { max-width: 40rem; margin: 0 auto; padding: 0 1.25rem 2.75rem; color: #6e6e73; font-size: 0.92rem; }
+footer.site p { margin: 0.35rem 0; }
+footer.site a.home { color: #1d1d1f; font-weight: 600; text-decoration: none; }
