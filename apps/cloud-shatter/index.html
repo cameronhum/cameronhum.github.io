@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WSVH6F3Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cloud Shatter — Arcade sky combat for Windows</title>
+  <meta name="description" content="Cloud Shatter is an arcade dogfight for Windows. Fly a sortie, fit the aircraft in the hangar, and spend gold and gems that stay on the PC.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="author" content="Cameron S Humphries">
+  <link rel="canonical" href="https://cameronhum.github.io/apps/cloud-shatter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cloud Shatter — Arcade sky combat for Windows">
+  <meta property="og:description" content="Cloud Shatter is an arcade dogfight for Windows. Fly a sortie, fit the aircraft in the hangar, and spend gold and gems that stay on the PC.">
+  <meta property="og:url" content="https://cameronhum.github.io/apps/cloud-shatter/">
+  <meta property="og:image" content="https://cameronhum.github.io/apps/cloud-shatter/media/icon.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cloud Shatter — Arcade sky combat for Windows">
+  <meta name="twitter:description" content="Cloud Shatter is an arcade dogfight for Windows. Fly a sortie, fit the aircraft in the hangar, and spend gold and gems that stay on the PC.">
+  <meta name="twitter:image" content="https://cameronhum.github.io/apps/cloud-shatter/media/icon.png">
+  <link rel="stylesheet" href="/site.css?v=7">
+  <style>
+    .title { display: flex; gap: 0.9rem; align-items: center; }
+    .title img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+    p.by { color: #6e6e73; margin: 0.15rem 0 0; }
+    p.lead { color: #1d1d1f; }
+    .reel { position: relative; margin: 1.6rem 0 0; container-type: inline-size; }
+    .reel-track { display: flex; gap: 0.55rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+    .reel-track::-webkit-scrollbar { display: none; }
+    .reel-track figure { flex: none; width: calc((100% - 0.55rem) / 2); margin: 0; scroll-snap-align: start; }
+    .reel-track img { display: block; width: 100%; height: auto; border-radius: 14px; background: #0c1220; }
+    .reel-track figcaption { color: #6e6e73; font-size: 0.78rem; margin: 0.35rem 0 0; text-align: center; }
+    .reel-btn { position: absolute; top: 42%; transform: translateY(-50%); width: 2rem; height: 2rem; border: 0; border-radius: 50%; background: rgba(255,255,255,0.94); box-shadow: 0 1px 4px rgba(0,0,0,0.16); cursor: pointer; }
+    .reel-btn.prev { left: 0.55rem; }
+    .reel-btn.next { right: 0.55rem; }
+    .reel-btn::before { content: ""; display: block; width: 0.42rem; height: 0.42rem; border-right: 1.5px solid #1d1d1f; border-bottom: 1.5px solid #1d1d1f; }
+    .reel-btn.prev::before { transform: rotate(135deg); margin: 0.15rem 0 0 0.55rem; }
+    .reel-btn.next::before { transform: rotate(-45deg); margin: 0.15rem 0 0 0.35rem; }
+    .reel-dots { display: flex; justify-content: center; gap: 0.45rem; margin-top: 0.65rem; }
+    .reel-dots button { width: 0.45rem; height: 0.45rem; padding: 0; border: 0; border-radius: 50%; background: #d2d2d7; cursor: pointer; }
+    .reel-dots button[aria-current="true"] { background: #1d1d1f; }
+    .faq { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.7rem; }
+    .faq details { background: #f5f5f7; border-radius: 14px; }
+    .faq summary { cursor: pointer; list-style: none; padding: 0.85rem 2.2rem 0.85rem 1rem; font-weight: 600; position: relative; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: ""; position: absolute; right: 1rem; top: 1.15rem; width: 0.45rem; height: 0.45rem; border-right: 1.5px solid #6e6e73; border-bottom: 1.5px solid #6e6e73; transform: rotate(45deg); }
+    .faq details[open] summary::after { transform: rotate(-135deg); top: 1.3rem; }
+    .faq details p { margin: 0; padding: 0 1rem 0.95rem; color: #424245; }
+    ul { margin: 0.4rem 0 0; padding-left: 1.15rem; }
+    li { margin: 0.28rem 0; }
+    .card { background: #f5f5f7; border-radius: 18px; padding: 1rem; margin-top: 0.7rem; }
+    .card h3 { font-size: 1rem; font-weight: 600; margin: 0 0 0.3rem; }
+    .card p { margin: 0 0 0.75rem; color: #6e6e73; font-size: 0.95rem; }
+    .card textarea { display: block; width: 100%; box-sizing: border-box; min-height: 5.5rem; background: #fff; color: #1d1d1f; border: 1px solid #d2d2d7; border-radius: 12px; padding: 0.6rem 0.7rem; font: inherit; resize: vertical; }
+    .card textarea::placeholder { color: #6e6e73; }
+    .card button { display: inline-block; margin-top: 0.75rem; background: #1d1d1f; color: #fff; border: 0; border-radius: 980px; padding: 0.5rem 1rem; font: inherit; font-weight: 600; cursor: pointer; }
+    .kofi { margin: 0.85rem 0 0; }
+    .kofi img { height: 40px; width: auto; display: block; }
+    @media (max-width: 640px) {
+      .reel-track figure { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reel-track { scroll-behavior: auto; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://cameronhum.github.io/apps/cloud-shatter/#page",
+        "url": "https://cameronhum.github.io/apps/cloud-shatter/",
+        "name": "Cloud Shatter — Arcade sky combat for Windows",
+        "description": "Cloud Shatter is an arcade dogfight for Windows. Fly a sortie, fit the aircraft in the hangar, and spend gold and gems that stay on the PC.",
+        "inLanguage": "en",
+        "about": { "@id": "https://cameronhum.github.io/apps/cloud-shatter/#app" },
+        "primaryImageOfPage": "https://cameronhum.github.io/apps/cloud-shatter/media/icon.webp",
+        "significantLink": "https://cameronhum.github.io/apps/cloud-shatter/privacy/",
+        "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["#summary"] },
+        "dateModified": "2026-11-16"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://cameronhum.github.io/#cameron",
+        "name": "Cameron S Humphries"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://cameronhum.github.io/apps/cloud-shatter/#app",
+        "name": "Cloud Shatter",
+        "keywords": "arcade dogfight, plane game, Windows game",
+        "url": "https://cameronhum.github.io/apps/cloud-shatter/",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "image": "https://cameronhum.github.io/apps/cloud-shatter/media/icon.webp",
+        "screenshot": [
+          "https://cameronhum.github.io/apps/cloud-shatter/media/hangar.webp",
+          "https://cameronhum.github.io/apps/cloud-shatter/media/shop.webp",
+          "https://cameronhum.github.io/apps/cloud-shatter/media/challenges.webp"
+        ],
+        "featureList": [
+          "1v1, 2v2, 4v4, and a free-for-all of 16",
+          "Gun, missiles, a heat missile, bombs, and flares",
+          "Hangar parts for the engine, wing, plate, paint, attack, and support",
+          "A shop for chests, gold, and gems",
+          "Daily and weekly challenges",
+          "Gold, gems, and the aircraft stay on this PC"
+        ],
+        "description": "Arcade sky combat. Sortie through cloud decks, flares, and missiles, then fit the aircraft in the hangar.",
+        "author": { "@id": "https://cameronhum.github.io/#cameron" },
+        "publisher": { "@id": "https://cameronhum.github.io/#cameron" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://cameronhum.github.io/apps/cloud-shatter/#faq",
+        "url": "https://cameronhum.github.io/apps/cloud-shatter/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Cloud Shatter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cloud Shatter is an arcade dogfight for Windows by Cameron S Humphries. You fly a sortie, then fit the aircraft, open chests, and take on challenges."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What can Cloud Shatter do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A match is 1v1, 2v2, 4v4, or a free-for-all of 16. You have a gun, missiles, a heat missile, bombs, and flares. Hits chew the aircraft, and a wing stays on until the piece holding it is gone. The hangar changes the engine, wing, plate, paint, attack, and support. The shop sells chests and exchanges gold and gems. Challenges pay gold, gems, and chests."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Cloud Shatter need an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. There is no sign-in. The aircraft, gold, and gems stay on this PC."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does the hangar go?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On this PC. Gold, gems, owned parts, and the fitted aircraft are saved with the game. They are not uploaded."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can I download Cloud Shatter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cloud Shatter is not on the Microsoft Store. It is a Windows game still in development."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does Cloud Shatter cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cloud Shatter is not for sale. Gold and gems are spent inside the game. There is no payment."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site">
+    <nav>
+      <a class="brand" href="/"><img src="/favicon.svg" width="28" height="28" alt="">Cameron S Humphries</a>
+      <div class="apps">
+        <a href="/">Home</a>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Apps</button>
+          <div class="menu-list">
+            <a href="/apps/cymatic/">Cymatic</a>
+            <a href="/apps/while-ago/">While Ago</a>
+          </div>
+        </div>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Coming soon</button>
+          <div class="menu-list">
+            <a href="/apps/cymavolt/">CymaVolt</a>
+            <a href="/apps/cloud-shatter/" aria-current="page">Cloud Shatter</a>
+            <a href="/apps/catchify/">Catchify</a>
+            <a href="/apps/ambry/">Ambry</a>
+            <a href="/apps/evercake/">Evercake</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="title">
+      <img src="media/icon.webp" width="144" height="144" alt="Cloud Shatter logo, a cream and gold plane">
+      <div>
+        <h1>Cloud Shatter</h1>
+        <p class="by">Cameron S Humphries</p>
+      </div>
+    </div>
+
+    <p class="lead" id="summary">Cloud Shatter is an arcade dogfight for Windows by Cameron S Humphries. Fly the sortie, then come back to the hangar and fit the aircraft with the gold and gems you brought home.</p>
+
+    <div class="reel">
+      <div class="reel-track">
+        <figure>
+          <img src="media/hangar.webp" width="800" height="468" alt="The Vale spar in the hangar, with engine, wing, plate, paint, and the loadout stats.">
+          <figcaption>Hangar</figcaption>
+        </figure>
+        <figure>
+          <img src="media/shop.webp" width="800" height="468" alt="The shop, with wooden, silver, and gold chests, a gem pouch, and a gold crate.">
+          <figcaption>Shop</figcaption>
+        </figure>
+        <figure>
+          <img src="media/challenges.webp" width="800" height="468" alt="Daily and weekly challenges, including Three down, Bring one home, and Five wins.">
+          <figcaption>Challenges</figcaption>
+        </figure>
+      </div>
+      <button class="reel-btn prev" type="button" aria-label="Previous picture"></button>
+      <button class="reel-btn next" type="button" aria-label="Next picture"></button>
+      <div class="reel-dots">
+        <button type="button" aria-label="Hangar" aria-current="true"></button>
+        <button type="button" aria-label="Shop"></button>
+        <button type="button" aria-label="Challenges"></button>
+      </div>
+    </div>
+
+    <h2>What it can do</h2>
+    <p>Cloud Shatter is a side-view fight in the clouds. The aircraft is one body. You pitch with it, fire along the nose, and bring home what the sortie paid.</p>
+    <ul>
+      <li>A match is 1v1, 2v2, 4v4, or a free-for-all of 16. Empty seats are flown for you.</li>
+      <li>The gun, missiles, a heat missile, bombs, and flares. The gun overheats if you hold it. Flares pull a tracking missile off the aircraft.</li>
+      <li>Hits chew pixels out of the sprite. A wing stays on until the pixels holding it to the body are gone.</li>
+      <li>A stall stops the engine. Point the nose down and it comes back when the wings are flying again.</li>
+      <li>The hangar fits the engine, wing, plate, paint, a flag, an attack, support, and a booster that lasts one fight.</li>
+      <li>Mass, thrust, gun armor, blast armor, and roll change with the parts you fit.</li>
+      <li>The shop sells wooden, silver, and gold chests, and exchanges gold and gems. A win can drop a chest.</li>
+      <li>Challenges pay gold, gems, and chests for the day and the week.</li>
+      <li>Gold, gems, and the fitted aircraft stay on this PC.</li>
+    </ul>
+
+    <h2>On this PC</h2>
+    <p>There is no account and no sign-in. The hangar is saved with the game, on the computer where you play. Cloud Shatter does not show ads.</p>
+
+    <h2>FAQ</h2>
+    <div class="faq">
+      <details>
+        <summary>What is Cloud Shatter?</summary>
+        <p>Cloud Shatter is an arcade dogfight for Windows by Cameron S Humphries. You fly a sortie, then fit the aircraft, open chests, and take on challenges.</p>
+      </details>
+      <details>
+        <summary>What can Cloud Shatter do?</summary>
+        <p>A match is 1v1, 2v2, 4v4, or a free-for-all of 16. You have a gun, missiles, a heat missile, bombs, and flares. Hits chew the aircraft, and a wing stays on until the piece holding it is gone. The hangar changes the engine, wing, plate, paint, attack, and support. The shop sells chests and exchanges gold and gems. Challenges pay gold, gems, and chests.</p>
+      </details>
+      <details>
+        <summary>Does Cloud Shatter need an account?</summary>
+        <p>No. There is no sign-in. The aircraft, gold, and gems stay on this PC.</p>
+      </details>
+      <details>
+        <summary>Where does the hangar go?</summary>
+        <p>On this PC. Gold, gems, owned parts, and the fitted aircraft are saved with the game. They are not uploaded.</p>
+      </details>
+      <details>
+        <summary>Where can I download Cloud Shatter?</summary>
+        <p>Cloud Shatter is not on the Microsoft Store. It is a Windows game still in development.</p>
+      </details>
+      <details>
+        <summary>How much does Cloud Shatter cost?</summary>
+        <p>Cloud Shatter is not for sale. Gold and gems are spent inside the game. There is no payment.</p>
+      </details>
+    </div>
+
+    <h2>Support</h2>
+    <div class="support">
+      <form class="card" action="https://github.com/cameronhum/apps/issues/new" method="get" target="_blank">
+        <h3>Report a bug</h3>
+        <p>Please note: a GitHub account is required.</p>
+        <input type="hidden" name="labels" value="Cloud Shatter">
+        <input type="hidden" name="title" value="Cloud Shatter">
+        <textarea name="body" placeholder="What went wrong" required></textarea>
+        <button type="submit">Report a bug</button>
+      </form>
+      <p class="kofi"><a href="https://ko-fi.com/cameronhumphries"><img src="/apps/cymatic/media/kofi.webp" width="318" height="80" alt="Buy me a coffee on Ko-fi"></a></p>
+    </div>
+
+    <h2>Privacy</h2>
+    <p><a href="/apps/cloud-shatter/privacy/">Cloud Shatter privacy policy</a></p>
+  </main>
+  <script>
+    var reel = document.querySelector(".reel");
+    var track = reel.querySelector(".reel-track");
+    var slides = track.querySelectorAll("figure");
+    var dots = reel.querySelectorAll(".reel-dots button");
+    var index = 0;
+    var timer = 0;
+    var moving = false;
+    function show(next) {
+      var visible = matchMedia("(max-width: 640px)").matches ? 1 : 2;
+      var last = Math.max(0, slides.length - visible);
+      if (next < 0) index = last;
+      else if (next > last) index = 0;
+      else index = next;
+      var gap = parseFloat(getComputedStyle(track).gap) || 0;
+      var stride = slides[0].getBoundingClientRect().width + gap;
+      moving = true;
+      track.scrollTo({ left: index * stride, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      for (var i = 0; i < dots.length; i++) {
+        if (i === index) dots[i].setAttribute("aria-current", "true");
+        else dots[i].removeAttribute("aria-current");
+      }
+    }
+    function arm() {
+      clearInterval(timer);
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      timer = setInterval(function () { show(index + 1); }, 4500);
+    }
+    reel.querySelector(".prev").addEventListener("click", function () { show(index - 1); arm(); });
+    reel.querySelector(".next").addEventListener("click", function () { show(index + 1); arm(); });
+    for (var d = 0; d < dots.length; d++) {
+      dots[d].addEventListener("click", function () {
+        show(Array.prototype.indexOf.call(dots, this));
+        arm();
+      });
+    }
+    track.addEventListener("scrollend", function () {
+      if (moving) {
+        moving = false;
+        return;
+      }
+      var visible = matchMedia("(max-width: 640px)").matches ? 1 : 2;
+      var last = Math.max(0, slides.length - visible);
+      var gap = parseFloat(getComputedStyle(track).gap) || 0;
+      var stride = slides[0].getBoundingClientRect().width + gap;
+      var next = Math.round(track.scrollLeft / stride);
+      if (next < 0) next = 0;
+      if (next > last) next = last;
+      index = next;
+      for (var i = 0; i < dots.length; i++) {
+        if (i === index) dots[i].setAttribute("aria-current", "true");
+        else dots[i].removeAttribute("aria-current");
+      }
+    });
+    reel.addEventListener("mouseenter", function () { clearInterval(timer); });
+    reel.addEventListener("mouseleave", arm);
+    reel.addEventListener("focusin", function () { clearInterval(timer); });
+    reel.addEventListener("focusout", arm);
+    arm();
+  </script>
+  <script src="/nav.js"></script>
+</body>
+</html>

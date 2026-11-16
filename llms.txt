@@ -31,6 +31,33 @@ A rhythm can be daily, every few days, weekly, monthly, custom, or learned from 
 - [While Ago support](https://cameronhum.github.io/apps/while-ago/support.html): Report a bug or ask a question
 - [Donate to While Ago](https://cameronhum.github.io/apps/while-ago/donate.html): Optional support for the developer
 
+## CymaVolt
+
+CymaVolt is a bench for guitar-pedal circuits. Place resistors, capacitors, diodes, and potentiometers, wire them to an input, an output, and ground, and hear the circuit while the values change. Play and Bypass sit next to waveforms and a frequency view. The source can be a note, an instrument, a device, or a file. Designs stay in the browser as a .pmk file, a wired section can be saved as a block, and Export packages the pedal as a VST3.
+
+There is no account. Circuits are not uploaded. CymaVolt is not on the Microsoft Store and is not for sale yet.
+
+- [CymaVolt app page](https://cameronhum.github.io/apps/cymavolt/): Features, FAQ, and how a design is stored
+- [CymaVolt privacy policy](https://cameronhum.github.io/apps/cymavolt/privacy/): Designs stay in the browser
+
+## Cloud Shatter
+
+Cloud Shatter is an arcade dogfight for Windows. A match is 1v1, 2v2, 4v4, or a free-for-all of 16. The aircraft has a gun, missiles, a heat missile, bombs, and flares. Hits chew the sprite. The hangar fits the engine, wing, plate, paint, attack, and support. The shop sells chests and exchanges gold and gems. Challenges pay gold, gems, and chests.
+
+There is no account. Gold, gems, and the fitted aircraft stay on the PC. Cloud Shatter is not on the Microsoft Store and is not for sale. Gold and gems are inside the game.
+
+- [Cloud Shatter app page](https://cameronhum.github.io/apps/cloud-shatter/): Features, screenshots, FAQ, and where the hangar is saved
+- [Cloud Shatter privacy policy](https://cameronhum.github.io/apps/cloud-shatter/privacy/): The hangar stays on the PC
+
+## Catchify
+
+Catchify is a Spotify catch-up. Pick playlists, including liked songs. It lists newer tracks that are not already in those playlists, since the last added release for each artist or inside a time window. The inbox groups by artist, playlist, or album. Select tracks and add them to a new playlist or one you already have. A scan does not write a playlist.
+
+Catchify has no account of its own and no server. You log in with Spotify, and the tokens stay in the browser. It is not on the Microsoft Store and is not for sale. It runs in the browser, which can install it on Windows, Android, or iPhone.
+
+- [Catchify app page](https://cameronhum.github.io/apps/catchify/): Features, FAQ, and how Spotify login is stored
+- [Catchify privacy policy](https://cameronhum.github.io/apps/catchify/privacy/): Tokens stay in the browser, and there is no Catchify server
+
 ## Ambry
 
 Ambry is a meals, pantry, and shopping list. Tick the meals you want to cook. Ambry checks the ingredients against food already in the house, orders what you can cook next, and lists what you still need to buy. Have and Get hold the cupboard and the shopping. Each food can have a note, a quantity, and an expiry.

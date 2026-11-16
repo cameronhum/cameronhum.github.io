@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WSVH6F3Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CymaVolt — Guitar pedal circuit designer</title>
+  <meta name="description" content="CymaVolt is a bench for guitar-pedal circuits. Place the parts, wire them, and hear the circuit while you change the values.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="author" content="Cameron S Humphries">
+  <link rel="canonical" href="https://cameronhum.github.io/apps/cymavolt/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CymaVolt — Guitar pedal circuit designer">
+  <meta property="og:description" content="CymaVolt is a bench for guitar-pedal circuits. Place the parts, wire them, and hear the circuit while you change the values.">
+  <meta property="og:url" content="https://cameronhum.github.io/apps/cymavolt/">
+  <meta property="og:image" content="https://cameronhum.github.io/apps/cymavolt/media/icon.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CymaVolt — Guitar pedal circuit designer">
+  <meta name="twitter:description" content="CymaVolt is a bench for guitar-pedal circuits. Place the parts, wire them, and hear the circuit while you change the values.">
+  <meta name="twitter:image" content="https://cameronhum.github.io/apps/cymavolt/media/icon.png">
+  <link rel="stylesheet" href="/site.css?v=7">
+  <style>
+    .title { display: flex; gap: 0.9rem; align-items: center; }
+    .title img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+    .reel { position: relative; margin: 1.6rem 0 0; container-type: inline-size; }
+    .reel-track { display: flex; gap: 0.55rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+    .reel-track::-webkit-scrollbar { display: none; }
+    .reel-track figure { flex: none; width: calc((100% - 0.55rem) / 2); margin: 0; scroll-snap-align: start; }
+    .reel-track img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: top center; border-radius: 14px; background: #121416; }
+    .reel-track figcaption { color: #6e6e73; font-size: 0.78rem; margin: 0.35rem 0 0; text-align: center; }
+    .reel-btn { position: absolute; top: calc((100cqi - 0.55rem) * 9 / 32); transform: translateY(-50%); width: 2rem; height: 2rem; border: 0; border-radius: 50%; background: rgba(255,255,255,0.94); box-shadow: 0 1px 4px rgba(0,0,0,0.16); cursor: pointer; }
+    .reel-btn.prev { left: 0.55rem; }
+    .reel-btn.next { right: 0.55rem; }
+    .reel-btn::before { content: ""; display: block; width: 0.42rem; height: 0.42rem; border-right: 1.5px solid #1d1d1f; border-bottom: 1.5px solid #1d1d1f; }
+    .reel-btn.prev::before { transform: rotate(135deg); margin: 0.15rem 0 0 0.55rem; }
+    .reel-btn.next::before { transform: rotate(-45deg); margin: 0.15rem 0 0 0.35rem; }
+    .reel-dots { display: flex; justify-content: center; gap: 0.45rem; margin-top: 0.65rem; }
+    .reel-dots button { width: 0.45rem; height: 0.45rem; padding: 0; border: 0; border-radius: 50%; background: #d2d2d7; cursor: pointer; }
+    .reel-dots button[aria-current="true"] { background: #1d1d1f; }
+    p.by { color: #6e6e73; margin: 0.15rem 0 0; }
+    p.lead { color: #1d1d1f; }
+    .faq { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.7rem; }
+    .faq details { background: #f5f5f7; border-radius: 14px; }
+    .faq summary { cursor: pointer; list-style: none; padding: 0.85rem 2.2rem 0.85rem 1rem; font-weight: 600; position: relative; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: ""; position: absolute; right: 1rem; top: 1.15rem; width: 0.45rem; height: 0.45rem; border-right: 1.5px solid #6e6e73; border-bottom: 1.5px solid #6e6e73; transform: rotate(45deg); }
+    .faq details[open] summary::after { transform: rotate(-135deg); top: 1.3rem; }
+    .faq details p { margin: 0; padding: 0 1rem 0.95rem; color: #424245; }
+    ul { margin: 0.4rem 0 0; padding-left: 1.15rem; }
+    li { margin: 0.28rem 0; }
+    .card { background: #f5f5f7; border-radius: 18px; padding: 1rem; margin-top: 0.7rem; }
+    .card h3 { font-size: 1rem; font-weight: 600; margin: 0 0 0.3rem; }
+    .card p { margin: 0 0 0.75rem; color: #6e6e73; font-size: 0.95rem; }
+    .card textarea { display: block; width: 100%; box-sizing: border-box; min-height: 5.5rem; background: #fff; color: #1d1d1f; border: 1px solid #d2d2d7; border-radius: 12px; padding: 0.6rem 0.7rem; font: inherit; resize: vertical; }
+    .card textarea::placeholder { color: #6e6e73; }
+    .card button { display: inline-block; margin-top: 0.75rem; background: #1d1d1f; color: #fff; border: 0; border-radius: 980px; padding: 0.5rem 1rem; font: inherit; font-weight: 600; cursor: pointer; }
+    .kofi { margin: 0.85rem 0 0; }
+    .kofi img { height: 40px; width: auto; display: block; }
+    @media (max-width: 640px) {
+      .reel-track figure { width: 100%; }
+      .reel-btn { top: calc(100cqi * 9 / 32); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reel-track { scroll-behavior: auto; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://cameronhum.github.io/apps/cymavolt/#page",
+        "url": "https://cameronhum.github.io/apps/cymavolt/",
+        "name": "CymaVolt — Guitar pedal circuit designer",
+        "description": "CymaVolt is a bench for guitar-pedal circuits. Place the parts, wire them, and hear the circuit while you change the values.",
+        "inLanguage": "en",
+        "about": { "@id": "https://cameronhum.github.io/apps/cymavolt/#app" },
+        "primaryImageOfPage": "https://cameronhum.github.io/apps/cymavolt/media/icon.webp",
+        "significantLink": "https://cameronhum.github.io/apps/cymavolt/privacy/",
+        "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["#summary"] },
+        "dateModified": "2026-11-16"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://cameronhum.github.io/#cameron",
+        "name": "Cameron S Humphries"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://cameronhum.github.io/apps/cymavolt/#app",
+        "name": "CymaVolt",
+        "keywords": "guitar pedal, circuit designer, effects pedal",
+        "url": "https://cameronhum.github.io/apps/cymavolt/",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web",
+        "image": "https://cameronhum.github.io/apps/cymavolt/media/icon.webp",
+        "screenshot": [
+          "https://cameronhum.github.io/apps/cymavolt/media/circuit.webp",
+          "https://cameronhum.github.io/apps/cymavolt/media/designer.webp"
+        ],
+        "featureList": [
+          "Place resistors, capacitors, diodes, and potentiometers",
+          "Wire parts to an input, an output, and ground",
+          "Hear the circuit while the values change",
+          "Play, bypass, waveforms, and a frequency view",
+          "A note, an instrument, a device, or a file as the source",
+          "Save a design in this browser, and export a VST3",
+          "Lay out knobs, switches, jacks, and an LED on a Hammond enclosure"
+        ],
+        "description": "A bench for guitar-pedal circuits. Wire the parts and hear the circuit in real time.",
+        "author": { "@id": "https://cameronhum.github.io/#cameron" },
+        "publisher": { "@id": "https://cameronhum.github.io/#cameron" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://cameronhum.github.io/apps/cymavolt/#faq",
+        "url": "https://cameronhum.github.io/apps/cymavolt/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is CymaVolt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CymaVolt is a guitar pedal circuit designer by Cameron S Humphries. You place parts, wire them, and hear the circuit while you change it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What can CymaVolt do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You place resistors, capacitors, diodes, and potentiometers, and wire them to an input, an output, and ground. Play listens to the circuit. Bypass switches back to the dry input. Waveforms and a frequency view follow what you hear. The source can be a note, an instrument, a device, or a file. A design can be saved in this browser, and a wired section can be saved as a block. The designer places knobs, switches, jacks, and an LED on a Hammond enclosure. Export packages the pedal as a VST3."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does CymaVolt need an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. There is no sign-in. Designs stay in this browser."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where do the pedals go?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They stay in this browser. You can also save a .pmk file, or export a VST3. The circuit is not uploaded."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can I download CymaVolt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CymaVolt is not on the Microsoft Store. It runs in the browser."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does CymaVolt cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CymaVolt is not for sale yet. It is not on the Microsoft Store."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site">
+    <nav>
+      <a class="brand" href="/"><img src="/favicon.svg" width="28" height="28" alt="">Cameron S Humphries</a>
+      <div class="apps">
+        <a href="/">Home</a>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Apps</button>
+          <div class="menu-list">
+            <a href="/apps/cymatic/">Cymatic</a>
+            <a href="/apps/while-ago/">While Ago</a>
+          </div>
+        </div>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Coming soon</button>
+          <div class="menu-list">
+            <a href="/apps/cymavolt/" aria-current="page">CymaVolt</a>
+            <a href="/apps/cloud-shatter/">Cloud Shatter</a>
+            <a href="/apps/catchify/">Catchify</a>
+            <a href="/apps/ambry/">Ambry</a>
+            <a href="/apps/evercake/">Evercake</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="title">
+      <img src="media/icon.webp" width="144" height="144" alt="CymaVolt logo">
+      <div>
+        <h1>CymaVolt</h1>
+        <p class="by">Cameron S Humphries</p>
+      </div>
+    </div>
+
+    <p class="lead" id="summary">CymaVolt is a bench for guitar-pedal circuits by Cameron S Humphries. Place the parts, wire them to the input and the output, and hear the circuit while you change the values.</p>
+
+    <div class="reel">
+      <div class="reel-track">
+        <figure>
+          <img src="media/circuit.webp" width="800" height="450" alt="A diode clipper on the circuit bench, with an input, a potentiometer, a resistor, and two diodes to ground.">
+          <figcaption>Circuit</figcaption>
+        </figure>
+        <figure>
+          <img src="media/designer.webp" width="800" height="450" alt="The diode clipper enclosure on a Hammond 125B, next to the enclosure sizes.">
+          <figcaption>Enclosure</figcaption>
+        </figure>
+      </div>
+      <button class="reel-btn prev" type="button" aria-label="Previous picture"></button>
+      <button class="reel-btn next" type="button" aria-label="Next picture"></button>
+      <div class="reel-dots">
+        <button type="button" aria-label="Circuit" aria-current="true"></button>
+        <button type="button" aria-label="Enclosure"></button>
+      </div>
+    </div>
+
+    <h2>What it can do</h2>
+    <p>The sound is the circuit. Change a resistance, a capacitance, or a diode, and what you hear changes with it.</p>
+    <ul>
+      <li>Start a new project, open a saved one, or open a demo such as Low-pass, Diode clipper, Overdrive, Fuzz, Delay, or Tremolo.</li>
+      <li>Place resistors, capacitors, diodes, and potentiometers. Drag to move them. Rotate turns a part in quarter turns.</li>
+      <li>Tap a pin, then another pin, to wire them. Open pins are hollow rings. Wire the circuit to an input, an output, and ground.</li>
+      <li>Select a part to edit its value. Drag the knob on a potentiometer, or use its slider.</li>
+      <li>Play listens to the output. Bypass switches between that and the dry input.</li>
+      <li>Waveforms and a frequency view follow what you hear.</li>
+      <li>The source can be a note, an instrument, this device, or a file. Line and Instrument change how hard the input drives the circuit.</li>
+      <li>Block select gathers parts. Save that wired section as a block in this browser, then drop it back onto the canvas.</li>
+      <li>Save and load keep the design in this browser. The file is a .pmk.</li>
+      <li>The designer places knobs, switches, jacks, and an LED on a Hammond enclosure.</li>
+      <li>Export packages that pedal as a VST3.</li>
+    </ul>
+
+    <h2>On this device</h2>
+    <p>There is no account and no sign-in. Projects stay in this browser until you save a file or export a plugin. CymaVolt does not show ads.</p>
+
+    <h2>FAQ</h2>
+    <div class="faq">
+      <details>
+        <summary>What is CymaVolt?</summary>
+        <p>CymaVolt is a guitar pedal circuit designer by Cameron S Humphries. You place parts, wire them, and hear the circuit while you change it.</p>
+      </details>
+      <details>
+        <summary>What can CymaVolt do?</summary>
+        <p>You place resistors, capacitors, diodes, and potentiometers, and wire them to an input, an output, and ground. Play listens to the circuit. Bypass switches back to the dry input. Waveforms and a frequency view follow what you hear. The source can be a note, an instrument, a device, or a file. A design can be saved in this browser, and a wired section can be saved as a block. The designer places knobs, switches, jacks, and an LED on a Hammond enclosure. Export packages the pedal as a VST3.</p>
+      </details>
+      <details>
+        <summary>Does CymaVolt need an account?</summary>
+        <p>No. There is no sign-in. Designs stay in this browser.</p>
+      </details>
+      <details>
+        <summary>Where do the pedals go?</summary>
+        <p>They stay in this browser. You can also save a .pmk file, or export a VST3. The circuit is not uploaded.</p>
+      </details>
+      <details>
+        <summary>Where can I download CymaVolt?</summary>
+        <p>CymaVolt is not on the Microsoft Store. It runs in the browser.</p>
+      </details>
+      <details>
+        <summary>How much does CymaVolt cost?</summary>
+        <p>CymaVolt is not for sale yet. It is not on the Microsoft Store.</p>
+      </details>
+    </div>
+
+    <h2>Support</h2>
+    <div class="support">
+      <form class="card" action="https://github.com/cameronhum/apps/issues/new" method="get" target="_blank">
+        <h3>Report a bug</h3>
+        <p>Please note: a GitHub account is required.</p>
+        <input type="hidden" name="labels" value="CymaVolt">
+        <input type="hidden" name="title" value="CymaVolt">
+        <textarea name="body" placeholder="What went wrong" required></textarea>
+        <button type="submit">Report a bug</button>
+      </form>
+      <p class="kofi"><a href="https://ko-fi.com/cameronhumphries"><img src="/apps/cymatic/media/kofi.webp" width="318" height="80" alt="Buy me a coffee on Ko-fi"></a></p>
+    </div>
+
+    <h2>Privacy</h2>
+    <p><a href="/apps/cymavolt/privacy/">CymaVolt privacy policy</a></p>
+  </main>
+  <script>
+    var reel = document.querySelector(".reel");
+    var track = reel.querySelector(".reel-track");
+    var slides = track.querySelectorAll("figure");
+    var dots = reel.querySelectorAll(".reel-dots button");
+    var index = 0;
+    var timer = 0;
+    var moving = false;
+    function show(next) {
+      var visible = matchMedia("(max-width: 640px)").matches ? 1 : 2;
+      var last = Math.max(0, slides.length - visible);
+      if (next < 0) index = last;
+      else if (next > last) index = 0;
+      else index = next;
+      var gap = parseFloat(getComputedStyle(track).gap) || 0;
+      var stride = slides[0].getBoundingClientRect().width + gap;
+      moving = true;
+      track.scrollTo({ left: index * stride, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      for (var i = 0; i < dots.length; i++) {
+        if (i === index) dots[i].setAttribute("aria-current", "true");
+        else dots[i].removeAttribute("aria-current");
+      }
+    }
+    function arm() {
+      clearInterval(timer);
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      timer = setInterval(function () { show(index + 1); }, 4500);
+    }
+    reel.querySelector(".prev").addEventListener("click", function () { show(index - 1); arm(); });
+    reel.querySelector(".next").addEventListener("click", function () { show(index + 1); arm(); });
+    for (var d = 0; d < dots.length; d++) {
+      dots[d].addEventListener("click", function () {
+        show(Array.prototype.indexOf.call(dots, this));
+        arm();
+      });
+    }
+    track.addEventListener("scrollend", function () {
+      if (moving) {
+        moving = false;
+        return;
+      }
+      var visible = matchMedia("(max-width: 640px)").matches ? 1 : 2;
+      var last = Math.max(0, slides.length - visible);
+      var gap = parseFloat(getComputedStyle(track).gap) || 0;
+      var stride = slides[0].getBoundingClientRect().width + gap;
+      var next = Math.round(track.scrollLeft / stride);
+      if (next < 0) next = 0;
+      if (next > last) next = last;
+      index = next;
+      for (var i = 0; i < dots.length; i++) {
+        if (i === index) dots[i].setAttribute("aria-current", "true");
+        else dots[i].removeAttribute("aria-current");
+      }
+    });
+    reel.addEventListener("mouseenter", function () { clearInterval(timer); });
+    reel.addEventListener("mouseleave", arm);
+    reel.addEventListener("focusin", function () { clearInterval(timer); });
+    reel.addEventListener("focusout", arm);
+    arm();
+  </script>
+  <script src="/nav.js"></script>
+</body>
+</html>
