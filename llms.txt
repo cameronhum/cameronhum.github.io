@@ -1,8 +1,8 @@
 # Cameron S Humphries
 
-> Independent Windows apps by Cameron S Humphries: Cymatic, an interactive cymatics and music visualiser that turns PC audio into water patterns, and While Ago, an offline last-done and habit tracker. Both are sold on the Microsoft Store.
+> Independent software by Cameron S Humphries. Cymatic, a cymatics and music visualiser, and While Ago, an offline last-done tracker, are on the Microsoft Store for AUD $1.50. CymaVolt, Cloud Shatter, Catchify, Ambry, and Evercake are in development and are not for sale.
 
-Each app has its own page on this site with features, an FAQ, system requirements, and a privacy policy. Neither app has an account, ads, or analytics, and app data stays on the user's PC.
+Each app has its own page on this site. Cymatic and While Ago have no account, no ads, and no analytics, and their data stays on the PC. The apps in development are described on their own pages, including what is not available yet.
 
 - [Home](https://cameronhum.github.io/): List of apps by Cameron S Humphries
 - [Sitemap](https://cameronhum.github.io/sitemap.xml): Every public page on this site
@@ -78,5 +78,5 @@ There is no account. People, photos, notes, and reminders stay on the device. Ev
 
 ## Optional
 
-- [Support Cameron on Ko-fi](https://ko-fi.com/cameronhumphries): Optional tip jar for both apps
-- [Report a bug on GitHub](https://github.com/cameronhum/apps/issues): Issue tracker for Cymatic and While Ago
+- [Support Cameron on Ko-fi](https://ko-fi.com/cameronhumphries): Optional tip jar
+- [Report a bug on GitHub](https://github.com/cameronhum/apps/issues): Issue tracker for the apps on this site
