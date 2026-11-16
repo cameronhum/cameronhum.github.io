@@ -25,7 +25,7 @@
   <meta name="twitter:title" content="While Ago privacy policy">
   <meta name="twitter:description" content="Privacy policy for While Ago, a local-first time tracker for Windows by Cameron S Humphries. No account. What stays on the PC, and what is not sent.">
   <meta name="twitter:image" content="https://cameronhum.github.io/apps/while-ago/media/icon.png">
-  <link rel="stylesheet" href="/apps/while-ago/site.css">
+  <link rel="stylesheet" href="/apps/while-ago/site.css?v=3">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,8 +57,23 @@
       <a class="brand" href="/"><img src="/favicon.svg" width="28" height="28" alt="">Cameron S Humphries</a>
       <div class="apps">
         <a href="/">Home</a>
-        <a href="/apps/while-ago/">While Ago</a>
-        <a href="/apps/while-ago/privacy/" aria-current="page">Privacy</a>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Apps</button>
+          <div class="menu-list">
+            <a href="/apps/cymatic/">Cymatic</a>
+            <a href="/apps/while-ago/" aria-current="page">While Ago</a>
+          </div>
+        </div>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Coming soon</button>
+          <div class="menu-list">
+            <a href="/#upcoming">CymaVolt</a>
+            <a href="/#upcoming">Cloud Shatter</a>
+            <a href="/#upcoming">Catchify</a>
+            <a href="/apps/ambry/">Ambry</a>
+            <a href="/apps/evercake/">Evercake</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -120,5 +135,6 @@
       <p>Questions about this policy can go through the <a href="/apps/while-ago/#support">bug report on the While Ago page</a>. Write the question in the message. Do not attach the activity log.</p>
     </div>
   </main>
+  <script src="/nav.js"></script>
 </body>
 </html>

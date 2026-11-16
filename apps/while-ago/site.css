@@ -1,6 +1,6 @@
 body { margin: 0; background: #fff; color: #1d1d1f; font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
 a { color: #0066cc; }
-header.site { position: sticky; top: 0; z-index: 2; background: rgba(255,255,255,0.86); border-bottom: 1px solid rgba(0,0,0,0.08); backdrop-filter: saturate(180%) blur(20px); }
+header.site { position: sticky; top: 0; z-index: 5; overflow: visible; background: rgba(255,255,255,0.94); border-bottom: 1px solid rgba(0,0,0,0.08); }
 header.site nav { max-width: 40rem; margin: 0 auto; padding: 0.75rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 header.site a { color: #6e6e73; text-decoration: none; transition: color 0.2s ease; }
 header.site a.brand {
@@ -11,8 +11,20 @@ header.site a.brand {
   gap: 0.45rem;
 }
 header.site a.brand img { width: 28px; height: 28px; border-radius: 7px; flex: none; display: block; }
-header.site .apps { display: flex; gap: 1.1rem; }
+header.site .apps { display: flex; align-items: center; gap: 1.1rem; }
 header.site .apps a[aria-current="page"] { color: #1d1d1f; }
+header.site .menu { position: relative; }
+header.site .menu > button { background: none; border: 0; padding: 0; color: #6e6e73; font: inherit; cursor: pointer; }
+header.site .menu:has(a[aria-current="page"]) > button { color: #1d1d1f; }
+header.site .menu > button::after { content: ""; display: inline-block; width: 0.32rem; height: 0.32rem; margin-left: 0.35rem; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-0.12rem) rotate(45deg); }
+header.site .menu-list { display: none; position: absolute; top: calc(100% + 0.35rem); left: 0; min-width: 11rem; background: #fff; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); padding: 0.35rem; z-index: 3; }
+header.site .menu-list::before { content: ""; position: absolute; left: 0; right: 0; top: -0.35rem; height: 0.35rem; }
+header.site .menu:last-child .menu-list { left: auto; right: 0; }
+header.site .menu:hover .menu-list,
+header.site .menu:focus-within .menu-list,
+header.site .menu.open .menu-list { display: flex; flex-direction: column; }
+header.site .menu-list a { color: #1d1d1f; padding: 0.4rem 0.65rem; border-radius: 8px; }
+header.site .menu-list a:hover { background: #f5f5f7; }
 header.site a:focus-visible, a:focus-visible { outline: 2px solid #0066cc; outline-offset: 3px; }
 main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.25rem 4.5rem; }
 h1 { font-size: 2.5rem; font-weight: 600; letter-spacing: -0.022em; margin: 0; }

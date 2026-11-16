@@ -25,7 +25,7 @@
   <meta name="twitter:title" content="While Ago — Last-Done &amp; Activity Tracker for Windows">
   <meta name="twitter:description" content="While Ago is a Windows app that tracks when you last did things. Organise habits, routines and activities in visual workspaces, with private offline storage.">
   <meta name="twitter:image" content="https://cameronhum.github.io/apps/while-ago/media/icon.png">
-  <link rel="stylesheet" href="/apps/while-ago/site.css">
+  <link rel="stylesheet" href="/apps/while-ago/site.css?v=3">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -157,8 +157,23 @@
       <a class="brand" href="/"><img src="/favicon.svg" width="28" height="28" alt="">Cameron S Humphries</a>
       <div class="apps">
         <a href="/">Home</a>
-        <a href="/apps/while-ago/" aria-current="page">While Ago</a>
-        <a href="/apps/while-ago/privacy/">Privacy</a>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Apps</button>
+          <div class="menu-list">
+            <a href="/apps/cymatic/">Cymatic</a>
+            <a href="/apps/while-ago/" aria-current="page">While Ago</a>
+          </div>
+        </div>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Coming soon</button>
+          <div class="menu-list">
+            <a href="/#upcoming">CymaVolt</a>
+            <a href="/#upcoming">Cloud Shatter</a>
+            <a href="/#upcoming">Catchify</a>
+            <a href="/apps/ambry/">Ambry</a>
+            <a href="/apps/evercake/">Evercake</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -351,5 +366,6 @@
     reel.addEventListener("focusout", arm);
     arm();
   </script>
+  <script src="/nav.js"></script>
 </body>
 </html>

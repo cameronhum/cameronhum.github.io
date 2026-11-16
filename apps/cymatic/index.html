@@ -25,7 +25,7 @@
   <meta name="twitter:title" content="Cymatic — Live Water Cymatics Music Visualiser for Windows">
   <meta name="twitter:description" content="Cymatic is a real-time Windows cymatics and music visualizer. Turn PC audio or generated tones into interactive water patterns without a microphone.">
   <meta name="twitter:image" content="https://cameronhum.github.io/apps/cymatic/media/icon.png">
-  <link rel="stylesheet" href="/site.css?v=5">
+  <link rel="stylesheet" href="/site.css?v=7">
   <style>
     .title { display: flex; gap: 0.9rem; align-items: center; }
     .title img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
@@ -222,8 +222,23 @@
       <a class="brand" href="/"><img src="/favicon.svg" width="28" height="28" alt="">Cameron S Humphries</a>
       <div class="apps">
         <a href="/">Home</a>
-        <a href="/apps/cymatic/" aria-current="page">Cymatic</a>
-        <a href="/apps/cymatic/privacy/">Privacy</a>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Apps</button>
+          <div class="menu-list">
+            <a href="/apps/cymatic/" aria-current="page">Cymatic</a>
+            <a href="/apps/while-ago/">While Ago</a>
+          </div>
+        </div>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Coming soon</button>
+          <div class="menu-list">
+            <a href="/#upcoming">CymaVolt</a>
+            <a href="/#upcoming">Cloud Shatter</a>
+            <a href="/#upcoming">Catchify</a>
+            <a href="/apps/ambry/">Ambry</a>
+            <a href="/apps/evercake/">Evercake</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -410,5 +425,6 @@
     reel.addEventListener("focusout", arm);
     arm();
   </script>
+  <script src="/nav.js"></script>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <meta name="twitter:title" content="Evercake — Birthday calendar for Windows and Android">
   <meta name="twitter:description" content="Evercake is a birthday calendar for Windows and Android. See who is next, keep a photo and a note on each person, and set a reminder.">
   <meta name="twitter:image" content="https://cameronhum.github.io/apps/evercake/media/icon.png">
-  <link rel="stylesheet" href="/site.css?v=5">
+  <link rel="stylesheet" href="/site.css?v=7">
   <style>
     .title { display: flex; gap: 0.9rem; align-items: center; }
     .title img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
@@ -158,8 +158,23 @@
       <a class="brand" href="/"><img src="/favicon.svg" width="28" height="28" alt="">Cameron S Humphries</a>
       <div class="apps">
         <a href="/">Home</a>
-        <a href="/apps/evercake/" aria-current="page">Evercake</a>
-        <a href="/apps/evercake/privacy/">Privacy</a>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Apps</button>
+          <div class="menu-list">
+            <a href="/apps/cymatic/">Cymatic</a>
+            <a href="/apps/while-ago/">While Ago</a>
+          </div>
+        </div>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Coming soon</button>
+          <div class="menu-list">
+            <a href="/#upcoming">CymaVolt</a>
+            <a href="/#upcoming">Cloud Shatter</a>
+            <a href="/#upcoming">Catchify</a>
+            <a href="/apps/ambry/">Ambry</a>
+            <a href="/apps/evercake/" aria-current="page">Evercake</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -234,5 +249,6 @@
     <h2>Privacy</h2>
     <p><a href="/apps/evercake/privacy/">Evercake privacy policy</a></p>
   </main>
+  <script src="/nav.js"></script>
 </body>
 </html>

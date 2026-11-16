@@ -24,7 +24,7 @@
   <meta name="twitter:title" content="Windows Apps by Cameron S Humphries — Cymatic &amp; While Ago">
   <meta name="twitter:description" content="Independent Windows apps by Cameron S Humphries. Cymatic is a real-time cymatics visualizer that turns PC audio into interactive water patterns; While Ago tracks when you last did things with offline habit and routine workspaces.">
   <meta name="twitter:image" content="https://cameronhum.github.io/apps/cymatic/media/icon.png">
-  <link rel="stylesheet" href="/site.css?v=5">
+  <link rel="stylesheet" href="/site.css?v=7">
   <style>
     a.app { display: flex; gap: 0.9rem; align-items: center; margin-top: 0.7rem; padding: 0.95rem; background: #f5f5f7; border-radius: 18px; text-decoration: none; color: inherit; }
     a.app:hover { background: #ececf1; text-decoration: none; }
@@ -105,10 +105,23 @@
       <a class="brand" href="/"><img src="/favicon.svg" width="28" height="28" alt="">Cameron S Humphries</a>
       <div class="apps">
         <a href="/" aria-current="page">Home</a>
-        <a href="/apps/cymatic/">Cymatic</a>
-        <a href="/apps/while-ago/">While Ago</a>
-        <a href="/apps/ambry/">Ambry</a>
-        <a href="/apps/evercake/">Evercake</a>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Apps</button>
+          <div class="menu-list">
+            <a href="/apps/cymatic/">Cymatic</a>
+            <a href="/apps/while-ago/">While Ago</a>
+          </div>
+        </div>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Coming soon</button>
+          <div class="menu-list">
+            <a href="/#upcoming">CymaVolt</a>
+            <a href="/#upcoming">Cloud Shatter</a>
+            <a href="/#upcoming">Catchify</a>
+            <a href="/apps/ambry/">Ambry</a>
+            <a href="/apps/evercake/">Evercake</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -137,7 +150,7 @@
       <a class="privacy" href="/apps/while-ago/privacy/">Privacy</a>
     </div>
 
-    <h2>Upcoming</h2>
+    <h2 id="upcoming">Upcoming</h2>
     <p class="section-note">In development for Windows. Product names below may still change.</p>
 
     <div class="app-row upcoming">
@@ -201,5 +214,6 @@
       </a>
     </div>
   </main>
+  <script src="/nav.js"></script>
 </body>
 </html>

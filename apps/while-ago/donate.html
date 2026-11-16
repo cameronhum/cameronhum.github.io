@@ -25,7 +25,7 @@
   <meta name="twitter:title" content="Donate — While Ago">
   <meta name="twitter:description" content="While Ago has no checkout on this page. An optional Ko-fi gift does not create an account and does not send the activity log.">
   <meta name="twitter:image" content="https://cameronhum.github.io/apps/while-ago/media/icon.png">
-  <link rel="stylesheet" href="/apps/while-ago/site.css">
+  <link rel="stylesheet" href="/apps/while-ago/site.css?v=3">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -56,8 +56,23 @@
       <a class="brand" href="/"><img src="/favicon.svg" width="28" height="28" alt="">Cameron S Humphries</a>
       <div class="apps">
         <a href="/">Home</a>
-        <a href="/apps/while-ago/">While Ago</a>
-        <a href="/apps/while-ago/privacy/">Privacy</a>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Apps</button>
+          <div class="menu-list">
+            <a href="/apps/cymatic/">Cymatic</a>
+            <a href="/apps/while-ago/" aria-current="page">While Ago</a>
+          </div>
+        </div>
+        <div class="menu">
+          <button type="button" aria-expanded="false">Coming soon</button>
+          <div class="menu-list">
+            <a href="/#upcoming">CymaVolt</a>
+            <a href="/#upcoming">Cloud Shatter</a>
+            <a href="/#upcoming">Catchify</a>
+            <a href="/apps/ambry/">Ambry</a>
+            <a href="/apps/evercake/">Evercake</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -70,5 +85,6 @@
     <p>While Ago is a Microsoft Store app. Microsoft handles the listing and any Store payment. This page does not take a card. The <a href="/apps/while-ago/privacy/">privacy policy</a> says what stays on the PC.</p>
     <p><a href="/apps/while-ago/">Back to While Ago</a></p>
   </main>
+  <script src="/nav.js"></script>
 </body>
 </html>
