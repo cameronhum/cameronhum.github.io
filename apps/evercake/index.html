@@ -29,6 +29,21 @@
   <style>
     .title { display: flex; gap: 0.9rem; align-items: center; }
     .title img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+    .reel { position: relative; margin: 1.6rem 0 0; container-type: inline-size; }
+    .reel-track { display: flex; gap: 0.55rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+    .reel-track::-webkit-scrollbar { display: none; }
+    .reel-track figure { flex: none; width: calc((100% - 0.55rem) / 2); margin: 0; scroll-snap-align: start; }
+    .reel-track img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: top center; border-radius: 14px; background: #f5f5f7; }
+    .reel-track figcaption { color: #6e6e73; font-size: 0.78rem; margin: 0.35rem 0 0; text-align: center; }
+    .reel-btn { position: absolute; top: calc((100cqi - 0.55rem) * 9 / 32); transform: translateY(-50%); width: 2rem; height: 2rem; border: 0; border-radius: 50%; background: rgba(255,255,255,0.94); box-shadow: 0 1px 4px rgba(0,0,0,0.16); cursor: pointer; }
+    .reel-btn.prev { left: 0.55rem; }
+    .reel-btn.next { right: 0.55rem; }
+    .reel-btn::before { content: ""; display: block; width: 0.42rem; height: 0.42rem; border-right: 1.5px solid #1d1d1f; border-bottom: 1.5px solid #1d1d1f; }
+    .reel-btn.prev::before { transform: rotate(135deg); margin: 0.15rem 0 0 0.55rem; }
+    .reel-btn.next::before { transform: rotate(-45deg); margin: 0.15rem 0 0 0.35rem; }
+    .reel-dots { display: flex; justify-content: center; gap: 0.45rem; margin-top: 0.65rem; }
+    .reel-dots button { width: 0.45rem; height: 0.45rem; padding: 0; border: 0; border-radius: 50%; background: #d2d2d7; cursor: pointer; }
+    .reel-dots button[aria-current="true"] { background: #1d1d1f; }
     p.by { color: #6e6e73; margin: 0.15rem 0 0; }
     p.lead { color: #1d1d1f; }
     .faq { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.7rem; }
@@ -48,6 +63,13 @@
     .card button { display: inline-block; margin-top: 0.75rem; background: #1d1d1f; color: #fff; border: 0; border-radius: 980px; padding: 0.5rem 1rem; font: inherit; font-weight: 600; cursor: pointer; }
     .kofi { margin: 0.85rem 0 0; }
     .kofi img { height: 40px; width: auto; display: block; }
+    @media (max-width: 640px) {
+      .reel-track figure { width: 100%; }
+      .reel-btn { top: calc(100cqi * 9 / 32); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reel-track { scroll-behavior: auto; }
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -80,6 +102,11 @@
         "applicationCategory": "LifestyleApplication",
         "operatingSystem": "Windows 10, Windows 11, Android",
         "image": "https://cameronhum.github.io/apps/evercake/media/icon.webp",
+        "screenshot": [
+          "https://cameronhum.github.io/apps/evercake/media/home.webp",
+          "https://cameronhum.github.io/apps/evercake/media/calendar.webp",
+          "https://cameronhum.github.io/apps/evercake/media/person.webp"
+        ],
         "featureList": [
           "Home shows who is next",
           "Calendar days fill in on birthdays",
@@ -189,6 +216,30 @@
 
     <p class="lead" id="summary">Evercake is a birthday calendar by Cameron S Humphries for Windows and Android. Home shows who is next. The calendar marks the day. Each person can hold a photo, a gift, and a reminder.</p>
 
+    <div class="reel">
+      <div class="reel-track">
+        <figure>
+          <img src="media/home.webp" width="800" height="450" alt="Evercake home, with Sam's birthday today and the meadow picnic scene.">
+          <figcaption>Home</figcaption>
+        </figure>
+        <figure>
+          <img src="media/calendar.webp" width="800" height="450" alt="The November 2026 calendar in Evercake, with painted days and Sam selected.">
+          <figcaption>Calendar</figcaption>
+        </figure>
+        <figure>
+          <img src="media/person.webp" width="800" height="450" alt="Sam's gift, party, and likes in Evercake, on the jewel ballroom scene.">
+          <figcaption>Person</figcaption>
+        </figure>
+      </div>
+      <button class="reel-btn prev" type="button" aria-label="Previous picture"></button>
+      <button class="reel-btn next" type="button" aria-label="Next picture"></button>
+      <div class="reel-dots">
+        <button type="button" aria-label="Home" aria-current="true"></button>
+        <button type="button" aria-label="Calendar"></button>
+        <button type="button" aria-label="Person"></button>
+      </div>
+    </div>
+
     <h2>What it can do</h2>
     <p>Evercake is one place for other people’s days. You add someone once. The app keeps the date, and tells you when it is close.</p>
     <ul>
@@ -249,6 +300,66 @@
     <h2>Privacy</h2>
     <p><a href="/apps/evercake/privacy/">Evercake privacy policy</a></p>
   </main>
+  <script>
+    var reel = document.querySelector(".reel");
+    var track = reel.querySelector(".reel-track");
+    var slides = track.querySelectorAll("figure");
+    var dots = reel.querySelectorAll(".reel-dots button");
+    var index = 0;
+    var timer = 0;
+    var moving = false;
+    function show(next) {
+      var visible = matchMedia("(max-width: 640px)").matches ? 1 : 2;
+      var last = Math.max(0, slides.length - visible);
+      if (next < 0) index = last;
+      else if (next > last) index = 0;
+      else index = next;
+      var gap = parseFloat(getComputedStyle(track).gap) || 0;
+      var stride = slides[0].getBoundingClientRect().width + gap;
+      moving = true;
+      track.scrollTo({ left: index * stride, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      for (var i = 0; i < dots.length; i++) {
+        if (i === index) dots[i].setAttribute("aria-current", "true");
+        else dots[i].removeAttribute("aria-current");
+      }
+    }
+    function arm() {
+      clearInterval(timer);
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      timer = setInterval(function () { show(index + 1); }, 4500);
+    }
+    reel.querySelector(".prev").addEventListener("click", function () { show(index - 1); arm(); });
+    reel.querySelector(".next").addEventListener("click", function () { show(index + 1); arm(); });
+    for (var d = 0; d < dots.length; d++) {
+      dots[d].addEventListener("click", function () {
+        show(Array.prototype.indexOf.call(dots, this));
+        arm();
+      });
+    }
+    track.addEventListener("scrollend", function () {
+      if (moving) {
+        moving = false;
+        return;
+      }
+      var visible = matchMedia("(max-width: 640px)").matches ? 1 : 2;
+      var last = Math.max(0, slides.length - visible);
+      var gap = parseFloat(getComputedStyle(track).gap) || 0;
+      var stride = slides[0].getBoundingClientRect().width + gap;
+      var next = Math.round(track.scrollLeft / stride);
+      if (next < 0) next = 0;
+      if (next > last) next = last;
+      index = next;
+      for (var i = 0; i < dots.length; i++) {
+        if (i === index) dots[i].setAttribute("aria-current", "true");
+        else dots[i].removeAttribute("aria-current");
+      }
+    });
+    reel.addEventListener("mouseenter", function () { clearInterval(timer); });
+    reel.addEventListener("mouseleave", arm);
+    reel.addEventListener("focusin", function () { clearInterval(timer); });
+    reel.addEventListener("focusout", arm);
+    arm();
+  </script>
   <script src="/nav.js"></script>
 </body>
 </html>
